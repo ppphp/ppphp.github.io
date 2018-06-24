@@ -1,3 +1,5 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+ jekyll-theme-kagami-0.1.12.gem
