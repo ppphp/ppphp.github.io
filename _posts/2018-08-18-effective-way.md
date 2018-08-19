@@ -38,7 +38,7 @@ categories: jekyll update
 
 很简单，redmine有官网教程http://www.redmine.org/projects/redmine/wiki/redmineinstall。作为ruby入门玩家，我选择postgresql作为连接db。可能接下来
 
-这次的安装与以往不同，以前自己折腾会力求完美，所有都安装最新版本的，但是这次只求快速，尽量使用容易获取的版本。因为这台机子以前装过pg9.6所以这次也是pg9.6。
+这次的安装与以往不同，以前自己折腾会力求完美，所有都安装最新版本的，但是这次只求快速，尽量使用容易获取的版本。因为这台机子以前装过pg9.6所以这次也是pg9.6。开发版安装，反正跟项目没关系，不对了git checkout一下就好了。
 
 ```
 yum install git ruby postgresql96-devel ImageMagick-devel
@@ -87,11 +87,58 @@ bundle exec rails server webrick -e production
 然后是redmine theme代替辣眼睛的默认主题
 
 # gitlab
-https://docs.gitlab.com/ee/install/installation.html
+参考https://docs.gitlab.com/ee/install/installation.html和https://packages.gitlab.com/gitlab/gitlab-ce/install社区版的gitlab没有很复杂的组件，只有一rails，一redis，一db而已
 
-有rpm包，但是怕出事，选择源码安装
+有rpm包，但是怕出事，主要是pg版本的问题，选择源码安装，还是不负责任的直接开发版
 
+```
+git clone https://gitlab.com/gitlab-org/gitlab-ce.git
+```
 
+还真他妈巧了，这里面有个叫`.ruby-version`的文件，他会指导rbenv用哪种版本，包括gem，bundle全家。
 
+但是我他娘的居然之前没装epel？？？
+```
+rbenv install 2.4.4
+sudo yum install epel-release
+sudo yum install libicu-devel cmake mysql-devel re2-devel libsqlite3x-devel
+gem install bundle
+bundle install
+```
 
+然后还需要一个nodejs环境
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm install
+```
 
+忘了配db了，真他妈巧了，gitlab也推荐用postgresql，直接建表了
+```
+CREATE ROLE gitlab LOGIN ENCRYPTED PASSWORD 'my_password' NOINHERIT VALID UNTIL 'infinity';
+CREATE DATABASE gitlabhq_production OWNER gitlab;
+\c gitlabhq_production
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+```
+
+```
+yum install redis
+```
+
+终于可以配置了
+```
+cp config/gitlab.yml.example config/gitlab.yml
+cp config/secrets.yml.example config/secrets.yml
+chmod 0600 config/secrets.yml
+mkdir public/uploads/
+chmod 0700 public/uploads
+cp config/unicorn.rb.example config/unicorn.rb
+cp config/initializers/rack_attack.rb.example config/initializers/rack_attack.rb
+git config --global core.autocrlf input
+git config --global gc.auto 0
+git config --global repack.writeBitmaps true
+git config --global receive.advertisePushOptions true
+cp config/resque.yml.example config/resque.yml
+cp config/database.yml.postgresql config/database.yml
+vim config/database.yml
+bundle exec rake gitlab:shell:install REDIS_URL=unix:/var/run/redis/redis.sock RAILS_ENV=production SKIP_STORAGE_VALIDATION=true
+```
