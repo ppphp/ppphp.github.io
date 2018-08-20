@@ -121,12 +121,16 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 ```
 
 ```
-yum install redis
+yum install redis golang
 ```
-
+git too old
+```
+sudo rpm -U http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-2.noarch.rpm     && sudo yum install -y git
+```
 终于可以配置了
 ```
 cp config/gitlab.yml.example config/gitlab.yml
+vim config/gitlab.yml # for me, alter every /home/git path to my path, gitlab user to myself
 cp config/secrets.yml.example config/secrets.yml
 chmod 0600 config/secrets.yml
 mkdir public/uploads/
@@ -140,5 +144,5 @@ git config --global receive.advertisePushOptions true
 cp config/resque.yml.example config/resque.yml
 cp config/database.yml.postgresql config/database.yml
 vim config/database.yml
-bundle exec rake gitlab:shell:install REDIS_URL=unix:/var/run/redis/redis.sock RAILS_ENV=production SKIP_STORAGE_VALIDATION=true
+bundle exec rake gitlab:shell:install REDIS_URL=unix:/var/run/redis/redis.sock RAILS_ENV=production SKIP_STORAGE_VALIDATION=true # most problem happened here please check config/gitlab.yml
 ```
