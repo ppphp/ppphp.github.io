@@ -86,13 +86,13 @@ bundle exec rails server webrick -e production
 
 然后是redmine theme代替辣眼睛的默认主题
 
-# gitlab
+## gitlab
 参考https://docs.gitlab.com/ee/install/installation.html和https://packages.gitlab.com/gitlab/gitlab-ce/install社区版的gitlab没有很复杂的组件，只有一rails，一redis，一db而已
 
-有rpm包，但是怕出事，主要是pg版本的问题，选择源码安装，还是不负责任的直接开发版
+有rpm包，但是怕出事，主要是pg版本的问题，选择源码安装，还是不负责任的直接开发版，开发版果然挂了。。。用稳定版，稳定版也不太行。。。简直是吃内存的怪物
 
 ```
-git clone https://gitlab.com/gitlab-org/gitlab-ce.git
+git clone https://gitlab.com/gitlab-org/gitlab-ce.git -b 11-2-stable gitlab
 ```
 
 还真他妈巧了，这里面有个叫`.ruby-version`的文件，他会指导rbenv用哪种版本，包括gem，bundle全家。
@@ -136,6 +136,7 @@ chmod 0600 config/secrets.yml
 mkdir public/uploads/
 chmod 0700 public/uploads
 cp config/unicorn.rb.example config/unicorn.rb
+vim config/unicorn.rb # change working directory
 cp config/initializers/rack_attack.rb.example config/initializers/rack_attack.rb
 git config --global core.autocrlf input
 git config --global gc.auto 0
@@ -145,4 +146,29 @@ cp config/resque.yml.example config/resque.yml
 cp config/database.yml.postgresql config/database.yml
 vim config/database.yml
 bundle exec rake gitlab:shell:install REDIS_URL=unix:/var/run/redis/redis.sock RAILS_ENV=production SKIP_STORAGE_VALIDATION=true # most problem happened here please check config/gitlab.yml
+bundle exec rake "gitlab:workhorse:install[/home/devops/gitlab-workhorse]" RAILS_ENV=production
+git clone https://gitlab.com/gitlab-org/gitlab-pages.git
+cd gitlab-pages
+git checkout v$(</home/devops/gitlab/GITLAB_PAGES_VERSION)
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+sudo yum install bison -y
+gvm install go1.10.3 -B
+gvm use go1.10.3 --default
+gmake
+cd ../gitlab
+bundle exec rake "gitlab:gitaly:install[/home/devops/gitaly]" RAILS_ENV=production
+bundle exec rake gitlab:setup RAILS_ENV=production # change lib/tasks/gitlab/setup.rake not to check gitaly, then go back
+bundle exec rake gitlab:env:info RAILS_ENV=production
+bundle exec rake gettext:compile RAILS_ENV=production
+npm install yarn --global
+yarn install --production --pure-lockfile
+bundle exec rake gitlab:assets:compile RAILS_ENV=production NODE_ENV=production
+sudo cp lib/support/logrotate/gitlab /etc/logrotate.d/gitlab
+sudo cp lib/support/init.d/gitlab /etc/init.d/gitlab
+sudo cp lib/support/init.d/gitlab.default.example /etc/default/gitlab
 ```
+
+
+
+
+
