@@ -166,8 +166,24 @@ bundle exec rake gitlab:assets:compile RAILS_ENV=production NODE_ENV=production
 sudo cp lib/support/logrotate/gitlab /etc/logrotate.d/gitlab
 sudo cp lib/support/init.d/gitlab /etc/init.d/gitlab
 sudo cp lib/support/init.d/gitlab.default.example /etc/default/gitlab
+sudo service git
 ```
 
+## jenkins
+jenkins是个java包，下个jar就能跑了
+
+```
+wget http://mirrors.jenkins-ci.org/war-stable/2.121.3/jenkins.war
+java -jar jenkins.war
+```
+
+## k8s
+k8s是个go，打包成可执行文件了
+
+
+
+## docker
+必须使用社区源支持的版本
 
 
 
