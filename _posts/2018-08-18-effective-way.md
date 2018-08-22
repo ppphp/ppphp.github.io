@@ -30,7 +30,9 @@ categories: jekyll update
 
 因为穷，开发环境和运行都只能在同一台vps上，搬瓦工服务器，便宜，并没有跑ss，ss在另外一台，主要怕封了ip，反正是docker，也无所谓环境的问题了。
 
-介绍以下背景贺环境：半科班，会写一点go,ruby,python,c++等等，还有一点杂七杂八的语言，不提了，用过ubuntu,fedora,gentoo桌面，centos,freebsd服务器。
+gitlab要求8G内存【。】所以切换到阿里云了。go等工具需要提前安装翻墙环境。
+
+介绍以下背景和环境：半科班，会写一点go,ruby,python,c++等等，还有一点杂七杂八的语言，不提了，用过ubuntu,fedora,gentoo桌面，centos,freebsd服务器。
 
 # 安装
 ## 安装redmine
@@ -180,11 +182,35 @@ java -jar jenkins.war
 ## k8s
 k8s是个go，打包成可执行文件了
 
+```
+sudo yum install etcd -y
+sudo systemctl start etcd
+```
 
 
 ## docker
-必须使用社区源支持的版本
+需要使用的docker必须使用社区源支持的版本
 
+```
+sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+sudo systemctl start docker
+```
 
 
 
