@@ -204,5 +204,5 @@ sudo yum install -y kubernetes
 
 ## docker
 
-k8s 自带
+k8s自带，不能用否则yum会冲突
 
