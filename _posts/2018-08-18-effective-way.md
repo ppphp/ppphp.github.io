@@ -180,29 +180,45 @@ java -jar jenkins.war
 ```
 
 ## k8s
+据说openstack功能更强，但是目前我们并不做私有云类似的东西，所以姑且先k8s吧
+
 k8s是个go，打包成可执行文件了
 
-```
-sudo yum install etcd -y
-sudo systemctl start etcd
-```
-```sudo vim /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-```
-```
-sudo yum install -y kubernetes
-```
+尝试过官方的rpm包，简直不知所云，搞半天给我报个错，决定还是用二进制包。而且二进制包领先rpm包6个版本号。
 
+k8s不再是单纯管人的管理软件了，这是线上运维软件，dashboard功能并不强，需要打命令行，我也认了。
 
+k8s的分了三个部分，一个是client，一个是server，一个是node，client是我们连server用的，是管理员devops的机器，server是相当于master，是部署的大脑，给机器集群发号施令，node是机器跑docker用的，做一些监控运维的工作。
+
+```
+wget https://dl.k8s.io/v1.11.0/kubernetes-client-linux-amd64.tar.gz
+wget https://dl.k8s.io/v1.11.0/kubernetes-server-linux-amd64.tar.gz
+wget https://dl.k8s.io/v1.11.0/kubernetes-node-linux-amd64.tar.gz
+```
 
 ## docker
 
-k8s自带，不能用否则yum会冲突
+docker完全就是部署以后的事情了，所以，这部分是没有网页等一切酷功能的。
+
+需要使用的docker最好使用社区源支持的版本
+```
+sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+sudo systemctl start docker
+```
 
