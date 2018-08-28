@@ -10,6 +10,8 @@ categories: jekyll update
 
 看了半天，发觉还是gitlab，jenkins，redmine，k8s，docker这套流程比较好一点。
 
+最后可能还要酌情加一个elk，docker就合并到k8s组件了
+
 - redmine管理项目流程
 - 代码托管在gitlab上
 - 触发jenkins测试什么的
@@ -194,7 +196,7 @@ k8s是个go，打包成可执行文件了
 
 k8s不再是单纯管人的管理软件了，这是线上运维软件，dashboard功能并不强，需要打命令行，我也认了。
 
-k8s的分了三个部分，一个是client，一个是server，一个是node，client是我们连server用的，是管理员devops的机器，server是相当于master，是部署的大脑，给机器集群发号施令，node是机器跑docker用的，做一些监控运维的工作。
+k8s的分了三个部分，一个是client，一个是server，一个是node，client是我们连server用的，是管理员devops的机器，server是相当于master，是部署的大脑，给机器集群发号施令，node是机器跑docker用的，做一些监控运维的工作。但是似乎server有所有的bin，只用server也能达到效果。
 
 ```
 wget https://dl.k8s.io/v1.11.0/kubernetes-client-linux-amd64.tar.gz
@@ -202,11 +204,19 @@ wget https://dl.k8s.io/v1.11.0/kubernetes-server-linux-amd64.tar.gz
 wget https://dl.k8s.io/v1.11.0/kubernetes-node-linux-amd64.tar.gz
 ```
 
+kubeadm用来启动k8s服务，kubectl是客户端工具，kubelet是管理node的工具，kube-proxy是管理晦涩的k8s网络的工具，kube-apiserver是apiserver，kube-scheduler是scheduler，别的是别的
 
+很可能上sudo，毕竟docker服务，而且是部署服务器了，具体参考的这篇https://tuxknight-notes.readthedocs.io/en/latest/k8s/k8s_scratch.html
+
+```
+yum install bridge-utils -y
+ifconfig docker0 down
+brctl delbr docker0
+```
 
 ## docker
 
-docker完全就是部署以后的事情了，所以，这部分是没有网页等一切酷功能的。
+docker完全就是部署以后的事情了，所以，这部分是没有网页等一切酷功能的。当然线上服务就是酷功能了。
 
 需要使用的docker最好使用社区源支持的版本
 ```
