@@ -205,7 +205,7 @@ wget https://dl.k8s.io/v1.11.0/kubernetes-node-linux-amd64.tar.gz
 ```
 
 kubeadm用来启动k8s服务，kubectl是客户端工具，kubelet是管理node的工具，kube-proxy是管理晦涩的k8s网络的工具，kube-apiserver是apiserver，kube-scheduler是scheduler，别的是别的
-
+具体参考的这篇https://tuxknight
 很可能上sudo，毕竟docker服务，而且是部署服务器了，具体参考的这篇https://tuxknight-notes.readthedocs.io/en/latest/k8s/k8s_scratch.html
 
 ```
