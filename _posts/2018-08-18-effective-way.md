@@ -208,16 +208,6 @@ kubeadm用来启动k8s服务，kubectl是客户端工具，kubelet是管理node�
 
 很可能上sudo，毕竟docker服务，而且是部署服务器了，具体参考的这篇http://docs.kubernetes.org.cn/
 
-```
-yum install bridge-utils -y
-ifconfig docker0 down
-brctl delbr docker0
-```
-
-## docker
-
-docker完全就是部署以后的事情了，所以，这部分是没有网页等一切酷功能的。当然线上服务就是酷功能了。
-
 需要使用的docker最好使用社区源支持的版本
 ```
 sudo yum remove docker \
@@ -238,5 +228,11 @@ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum install docker-ce
 sudo systemctl start docker
+```
+
+```
+yum install bridge-utils -y
+ifconfig docker0 down
+brctl delbr docker0
 ```
 
