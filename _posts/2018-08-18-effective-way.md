@@ -230,9 +230,18 @@ sudo yum install docker-ce
 sudo systemctl start docker
 ```
 
+然后是配置docker proxy否则不能往外网拉镜像，不细说，但是把网桥先关了
+
 ```
 yum install bridge-utils -y
 ifconfig docker0 down
 brctl delbr docker0
+```
+
+首先还是配置一个node，跑kubelet
+
+最后跑个master
+```
+kubeadm init --kubernetes-version=v1.11.0
 ```
 
