@@ -192,21 +192,13 @@ java -jar jenkins.war
 
 k8s是个go，打包成可执行文件了
 
-尝试过官方的rpm包，简直不知所云，搞半天给我报个错，决定还是用二进制包。而且二进制包领先rpm包6个版本号。
-
 k8s不再是单纯管人的管理软件了，这是线上运维软件，dashboard功能并不强，需要打命令行，我也认了。
 
-k8s的分了三个部分，一个是client，一个是server，一个是node，client是我们连server用的，是管理员devops的机器，server是相当于master，是部署的大脑，给机器集群发号施令，node是机器跑docker用的，做一些监控运维的工作。但是似乎server有所有的bin，只用server也能达到效果。
-
-```
-wget https://dl.k8s.io/v1.11.0/kubernetes-client-linux-amd64.tar.gz
-wget https://dl.k8s.io/v1.11.0/kubernetes-server-linux-amd64.tar.gz
-wget https://dl.k8s.io/v1.11.0/kubernetes-node-linux-amd64.tar.gz
-```
+k8s的分了三个部分，一个是client，一个是server，一个是node，client是我们连server用的，是管理员devops的机器，server是相当于master，是部署的大脑，给机器集群发号施令，node是机器跑docker用的，做一些监控运维的工作。
 
 kubeadm用来启动k8s服务，kubectl是客户端工具，kubelet是管理node的工具，kube-proxy是管理晦涩的k8s网络的工具，kube-apiserver是apiserver，kube-scheduler是scheduler，别的是别的
 
-很可能上sudo，毕竟docker服务，而且是部署服务器了，具体参考的这篇http://docs.kubernetes.org.cn/
+上sudo，毕竟docker服务，而且是部署服务器了，具体参考的这篇http://docs.kubernetes.org.cn/
 
 需要使用的docker最好使用社区源支持的版本
 ```
@@ -229,19 +221,21 @@ sudo yum-config-manager \
 sudo yum install docker-ce
 sudo systemctl start docker
 ```
-
-然后是配置docker proxy否则不能往外网拉镜像，不细说，但是把网桥先关了
-
-```
-yum install bridge-utils -y
-ifconfig docker0 down
-brctl delbr docker0
-```
-
-首先还是配置一个node，跑kubelet
-
 最后跑个master
 ```
-kubeadm init --kubernetes-version=v1.11.0
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+exclude=kube*
+EOF
+setenforce 0
+yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+systemctl enable kubelet && systemctl start kubelet
+kubeadm init --kubernetes-version=v1.11.2
 ```
 
