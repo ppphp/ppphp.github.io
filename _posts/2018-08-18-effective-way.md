@@ -221,7 +221,7 @@ sudo yum-config-manager \
 sudo yum install docker-ce
 sudo systemctl start docker
 ```
-最后跑个master
+然后跑个master
 ```
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
@@ -238,4 +238,18 @@ yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 systemctl enable kubelet && systemctl start kubelet
 kubeadm init --kubernetes-version=v1.11.2
 ```
+启动k8s网络，我选择calico
+```
+sudo kubeadm reset
+sudo kubeadm --kubernetes-version=v1.11.2 init --pod-network-cidr=192.168.0.0/16
+sudo cp /etc/kubernetes/admin.conf $HOME/
+sudo chown $(id -u):$(id -g) $HOME/admin.conf
+export KUBECONFIG=$HOME/admin.conf
+kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
+kubectl taint nodes --all node-role.kubernetes.io/master-
+kubectl get pods --all-namespaces
+```
 
+
+kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
