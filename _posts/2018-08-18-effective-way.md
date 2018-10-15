@@ -242,16 +242,18 @@ kubeadm init --kubernetes-version=v1.11.2
 ```
 sudo kubeadm reset
 sudo kubeadm --kubernetes-version=v1.11.2 init --pod-network-cidr=192.168.0.0/16
-sudo cp /etc/kubernetes/admin.conf $HOME/
-sudo chown $(id -u):$(id -g) $HOME/admin.conf
-export KUBECONFIG=$HOME/admin.conf
+sudo cp /etc/kubernetes/admin.conf $HOME/.kube
+sudo chown $(id -u):$(id -g) $HOME/.kube/admin.conf
+export KUBECONFIG=$HOME/.kube/admin.conf
 kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
 kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
 kubectl taint nodes --all node-role.kubernetes.io/master-
 kubectl get pods --all-namespaces
 ```
+open port
+```
+vi /etc/kubernetes/manifests/kube-apiserver.yaml
+add `--service-node-port-range=80-32767` then save
+systemctl restart kubelet
+```
 
-
-kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
-
-kubectl proxy --address 0.0.0.0 --accept-hosts='^*$'
