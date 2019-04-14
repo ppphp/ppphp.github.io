@@ -17,7 +17,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_sha
 <canvas></canvas>
 <script>
 function draw() {
-  var canvas = document.getElementById('canvas');
+  var canvas = document.getElementByTagName('canvas');
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
 
