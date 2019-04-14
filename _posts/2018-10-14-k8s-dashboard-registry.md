@@ -1,7 +1,3 @@
-
-
-
-
 ---
 layout: post
 title:  "k8s learn"
