@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "frontend hello world"
@@ -17,7 +16,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_sha
 <canvas></canvas>
 <script>
 function draw() {
-  var canvas = document.getElementByTagName('canvas');
+  var canvas = document.getElementsByTagName('canvas');
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
 
