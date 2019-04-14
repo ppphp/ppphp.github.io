@@ -13,10 +13,10 @@ github page主要是为了搞前端的东西，因为这玩意就是个网页，
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
 
-<canvas width="150" height="150" onload="draw();"></canvas>
+<canvas width="150" height="150" id="canvas"></canvas>
 <script>
 function draw() {
-  var canvas = document.getElementsByTagName('canvas');
+  var canvas = document.getElementById('canvas');
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
 
