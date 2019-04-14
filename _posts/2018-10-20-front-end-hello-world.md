@@ -13,7 +13,7 @@ github page主要是为了搞前端的东西，因为这玩意就是个网页，
 
 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
 
-<canvas width="150" height="150"></canvas>
+<canvas width="150" height="150" onload="draw();"></canvas>
 <script>
 function draw() {
   var canvas = document.getElementsByTagName('canvas');
