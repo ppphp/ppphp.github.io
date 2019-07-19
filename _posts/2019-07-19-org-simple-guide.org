@@ -1,0 +1,50 @@
+#+TITLE: org simple guide
+#+LAYOUT: post
+#+TAGS: jekyll org-mode
+
+* 简单的org入门
+
+org mode可以理解为比较老，功能比较多的markdown了。
+看了一圈教程，markdown有的功能它都有，还有特别复杂的功能，只在emacs里面有。
+那么饭要一口一口吃，先学一下一些org的简单标记符号。
+
+** 标题
+org使用*作为标题的标记，和markdown用#做标题类似，markdown主要方便兼容在代码里作为注释使用，org就没有这个顾虑了，用专用的就行。
+
+** 列表
+org使用-,+,*作为无须列表的标记， 1. , 1) 这样的作为有序列表的标记
+
+举例
+- 1
+- 2
+- 3 :: 1+2 
+
+** 表格
+org表格跟markdown也差不多的
+
+|----|----|
+|1|2|
+|==|==|
+|||
+
+** 简单操作
+
+打开org，所有正文会缩起来，就一个标题露在外面，动也动不了，tab可以展开
+
+** html
+jekyll的html可以解析出来，看一下org mode的标签行不行
+
+<canvas width="150" height="150" id="canvas"></canvas>
+<script>
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillRect(25, 25, 100, 100);
+    ctx.clearRect(45, 45, 60, 60);
+    ctx.strokeRect(50, 50, 50, 50);
+  }
+}
+draw();
+</script>
