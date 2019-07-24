@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "github不支持org-jekyll插件"
-date:   2018-10-21 23:31:15 +0000
+date:   2019-07-23 23:31:15 +0000
 categories: jekyll update
 ---
 
