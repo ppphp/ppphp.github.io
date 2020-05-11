@@ -1,3 +1,19 @@
+# my blog
+
+## format
+
+mostly in org, to write a hook and work with github page gem.
+
+to reformat the css.
+
+## focus on
+
+some habbit like emacs editor, ember frontend, some foss like blender and inkscape.
+
+some skills like jazz guitar and some simple artwork.
+
+some works like anything about go, server and some simple game.
+
 # Kagami
 
 [![Build Status](https://travis-ci.org/kamikat/jekyll-theme-kagami.svg?branch=master)](https://travis-ci.org/kamikat/jekyll-theme-kagami)
