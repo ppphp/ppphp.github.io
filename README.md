@@ -2,7 +2,7 @@
 
 ## format
 
-mostly in org, to write a hook and work with github page gem.
+mostly in org, to write a hook to convert to markdown and work with github page gem.
 
 to reformat the css.
 
