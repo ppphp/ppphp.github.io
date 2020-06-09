@@ -16,15 +16,16 @@
 title: a usr/bin
 email: 2395434298@qq.com
 description: >- 
-  program/band
-  Actually I can do none of them.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  go developer
+  emacs user
+  jazz guitar player
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://ppphp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nmdshd
 github_username:  ppphp
 
 # Build settings
-markdown: kramdown
+markdown: gfm
 theme: jekyll-theme-kagami
 plugins:
   - jekyll-feed

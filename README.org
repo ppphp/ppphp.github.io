@@ -1,18 +1,23 @@
-# my blog
 
-## format
 
-mostly in org, to write a hook to convert to markdown and work with github page gem.
+* my blog
 
-to reformat the css.
+** format
 
-## focus on
+mostly in org, convert to markdown by [[https://github.com/larstvei/ox-gfm][ox-gfm]].
 
-some habbit like emacs editor, ember frontend, some foss like blender and inkscape.
+css would be reformatted. Now I am using Kagami.
 
-some skills like jazz guitar and some simple artwork.
+** focus on
 
-some works like anything about go, server and some simple game.
+Exploring some habbit like emacs editor, ember frontend, some foss like blender and inkscape.
+
+Practicing some skills like jazz guitar and some simple artwork.
+
+Developing some applications like anything about go, server and some simple games.
+
+
+
 
 # Kagami
 
