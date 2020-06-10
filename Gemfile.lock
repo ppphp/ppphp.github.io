@@ -256,6 +256,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-org
   jekyll-theme-kagami
+  jemoji (~> 0.11.1)
 
 BUNDLED WITH
    1.17.2

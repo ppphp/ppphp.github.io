@@ -18,6 +18,7 @@ email: 2395434298@qq.com
 description: >- 
   go developer
   emacs user
+  gentoo user
   jazz guitar player
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://ppphp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -25,11 +26,11 @@ twitter_username: nmdshd
 github_username:  ppphp
 
 # Build settings
-markdown: gfm
+markdown: kramdown
 theme: jekyll-theme-kagami
 plugins:
   - jekyll-feed
-  - jekyll-org
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
