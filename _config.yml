@@ -32,6 +32,9 @@ plugins:
   - jekyll-feed
   - jemoji
 
+pages:
+  - about
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
