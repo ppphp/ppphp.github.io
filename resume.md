@@ -1,14 +1,14 @@
 ---
 navlevel: header
-layout: page
+layout: default
 title: Resume
 permalink: /resume/
 ---
 <!-- it should be an html, just use front matter -->
 
+<a href="/resume/刘凯文简历.pdf">pdf</a>
 
-
-<script src="https://pixijs.download/v4.5.5/pixi.min.js"></script>
+<script src="https://pixijs.download/v5.3.0/pixi.min.js"></script>
 
 
   <script type="text/javascript">

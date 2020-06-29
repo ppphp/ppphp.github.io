@@ -1,0 +1,23 @@
+#+title: org-roam.org
+
+* setup configuration
+
+  set org-roam-directory 根目录
+
+  执行函数 org-roam-db-build-cache
+  
+* usage
+
+  org-roam-find-file 编辑词条
+  
+  org-roam 打开侧边的roam工具栏，显示引用什么的
+
+  org-roam-insert 插入引用
+
+  不定期  org-roam-db-build-cache
+  
+* 主要优点
+
+  反向链接backlink，被引用也会有一个标记
+
+  
