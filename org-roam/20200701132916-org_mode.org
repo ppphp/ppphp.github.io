@@ -1,0 +1,13 @@
+#+title: org-mode
+#+roam_tags: org emacs
+* 安装
+  git submodule
+* major mode
+  C-Enter 添加一个*
+  M-Right 增加标题层级
+  M-Left 减少标题层级
+* agenda
+** 导出hydra
+   查看日程 org-agenda
+
+   编辑日程文件 org-agenda-find-file

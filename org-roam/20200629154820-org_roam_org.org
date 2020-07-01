@@ -1,12 +1,15 @@
 #+title: org-roam.org
+#+roam_tags: org roam emacs
 
 * setup configuration
 
-  set org-roam-directory 根目录
+  org-roam-directory 根目录
 
+  org-roam-db-location db地址
+  
   执行函数 org-roam-db-build-cache
   
-* usage
+* 基本函数
 
   org-roam-find-file 编辑词条
   
@@ -14,10 +17,12 @@
 
   org-roam-insert 插入引用
 
-  不定期  org-roam-db-build-cache
+  不定期执行 org-roam-db-build-cache 建立索引
   
 * 主要优点
 
-  反向链接backlink，被引用也会有一个标记
-
+  反向链接backlink，被引用也会有一个标记，所以插入会有特殊的方法
   
+* 进阶
+
+  标题加入标签，用空格分割 roam_tags: 

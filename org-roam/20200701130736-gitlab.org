@@ -1,0 +1,6 @@
+#+title: gitlab
+#+roam_tags: self-host git
+* 安装
+  docker compose
+* 配置
+  
