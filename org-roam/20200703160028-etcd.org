@@ -8,19 +8,47 @@
   [[https://github.com/etcd-io][git]]
 
 * 把玩一下
-  make即make build,即./build本地的一个shell脚本
 
-  编译出来两个bin
-  - ./bin/etcd :: 是拿来跑的server，单机也可以启动
-  - ./bin/etcdctl :: 是相当于client类似功能的东西，更主要是控制
+** 编译安装
+   make即make build,即./build本地的一个shell脚本
+
+   编译出来两个bin
+   - ./bin/etcd :: 是拿来跑的server，单机也可以启动
+   - ./bin/etcdctl :: 是相当于client类似功能的东西，更主要是控制
   
+** 单节点
+   ./bin/etcd 其实可以直接起，默认端口2379
+
+   ./bin/etcdctl --endpoints=etcd的地址 put/get/lease/watch/lock 等等功能
+   
 * 基本用法
   
 ** 服务发现
+   默认前缀 _etcd/registry
 
 ** kv
+   - put/get/del
+   - --from-key :: 从开始
+   - --prefix :: 前缀
+   - --rev :: 第n个历史版本
+  
+** watch
+   查看key变化情况
+   
+** lease
+   lease grant 60得到一个hash,附在--lease后面可以共享ttl
+
+   lease keep-alive 这个hash可以续
+
+   lease timetolive 查看ttl
 
 * 内部架构
+
+** log
+   默认使用zap，文档里的capnslog已经deprecated了
+
+** monitor
+   在/metrics里面
 
 * 进阶用法
 
