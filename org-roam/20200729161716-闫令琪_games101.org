@@ -46,4 +46,9 @@
   $R(n,\alpha)=\cos(\alpha)I+(1-\cos(\alpha))nn^T+\sin(\alpha)\left(0%-n_z%n_y\\n_z%0%-n_x\\-n_y%n_x%0\right)$
 
   MVP Model View Projection
+  相机的属性：位置$\arrow{e}$，朝向$\hat{g}$，向上方向$\hat{t}$
+  转换相机到XYZ坐标：e:0,0,0 g:-Z t:Y
+  相机矩阵:$M_{view}=R_{view}T_{view}=\left(x_{\hat{g}\cross\hat{t}}%y_{\hat{g}\cross\hat{t}}%z_{\hat{g}\cross\hat{t}}%0\\x_t%y_t%z_t%0\\x_{-g}%y_{-g}%z_{-g}%0\\0%0%0%-1\right)\left(1%0%0%-x_e\\0%1%0%-y_e\\0%0%1%-z_e\\0%0%0%1\right)$
+
+  正交投影 透视投影
   
