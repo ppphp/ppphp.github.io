@@ -1,0 +1,49 @@
+#+title: 闫令琪-games101
+#+roam_tags: games graphic lesson
+#+OPTIONS: tex:t
+* 第一课 概述
+  瞎比比
+* 第二课 线代
+  点乘的数学形式
+  $ A(a,b) \times B(c,d) = ac+bd $
+  点乘的意义
+  - 两个向量方向接近
+  - 两个向量前后
+  叉乘的数学形式
+  $ A(a,b,c) \cross B(x,y,z) = \left( bz-yc \\ cx-az \\% ay-bx \right) $
+  $ A(a,b,c) \cross B(x,y,z) = \left( 0 % -c % b \\ c % 0 % -a \\ -b % a % 0 \right) \left(x\\y\\z\right) $
+  叉乘的意义
+  - 确认左右
+  - 确认内外
+* 第三课 变换
+  缩放 $\left(s%0\\0%s\right)$
+  拉伸（水平） $\left(s%0\\0%1\right)$
+  镜像（水平） $\left(-1%0\\0%1\right)$
+  切变（水平） $\left(1%a\\0%1\right)$
+  旋转（二维） $\left(\cos\theta%-\sin\theta\\\sin\theta%\cos\theta\right)$
+
+  线性变换：可以用矩阵变换的 $x\prime=Mx$
+
+  齐次坐标：比线性变换加一个常数，所以要加一个维度
+
+  点变成(x,y,1)向量变成(x,y,0),因为向量平移没卵用
+
+  而且加减可以保证平移不变性是不是有效
+
+  二维(x,y,w)是(x/w,y/w,1)，两个点相加是中点
+
+  逆变换
+
+  组合变换 按顺序从右往左放矩阵，结合结合律思考为什么
+
+  3D变换差不多，多一个z轴
+* 第四课 还是变换
+  三维旋转
+  x轴 $\left(1%0%0%0\\0%\cos\alpha%-\sin\alpha%0\\0%\sin\alpha%\cos\alpha%0\\0%0%0%1\right)$
+  y轴 $\left(\cos\alpha%0%\sin\alpha%0\\0%1%0%0\\-\sin\alpha%0%\cos\alpha%0\\0%0%0%1\right)$
+  z轴 $\left(\cos\alpha%-\sin\alpha%0%0\\\sin\alpha%\cos\alpha%0%0\\0%0%1%0\\0%0%0%1\right)$
+  罗德里格斯旋转公式：轴n角度$\alpha$
+  $R(n,\alpha)=\cos(\alpha)I+(1-\cos(\alpha))nn^T+\sin(\alpha)\left(0%-n_z%n_y\\n_z%0%-n_x\\-n_y%n_x%0\right)$
+
+  MVP Model View Projection
+  
