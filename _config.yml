@@ -35,7 +35,7 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude: ["./_posts/*.org"]
+exclude: ["./_posts/2020-07-20-weekly-report.org"]
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
