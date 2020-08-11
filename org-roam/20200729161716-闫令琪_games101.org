@@ -51,4 +51,7 @@
   相机矩阵:$M_{view}=R_{view}T_{view}=\left(x_{\hat{g}\cross\hat{t}}%y_{\hat{g}\cross\hat{t}}%z_{\hat{g}\cross\hat{t}}%0\\x_t%y_t%z_t%0\\x_{-g}%y_{-g}%z_{-g}%0\\0%0%0%-1\right)\left(1%0%0%-x_e\\0%1%0%-y_e\\0%0%1%-z_e\\0%0%0%1\right)$
 
   正交投影 透视投影
+  正交投影一个长方形  $M_{ortho}=\left(\right)$（太简单了,不写了，平移+缩放）
+
+  透视投影 长方体变梯形体 $M_{persp->ortho}$ $M_{persp}=M_{persp->ortho}$
   
