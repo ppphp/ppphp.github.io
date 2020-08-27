@@ -50,8 +50,17 @@
   转换相机到XYZ坐标：e:0,0,0 g:-Z t:Y
   相机矩阵:$M_{view}=R_{view}T_{view}=\left(x_{\hat{g}\cross\hat{t}}%y_{\hat{g}\cross\hat{t}}%z_{\hat{g}\cross\hat{t}}%0\\x_t%y_t%z_t%0\\x_{-g}%y_{-g}%z_{-g}%0\\0%0%0%-1\right)\left(1%0%0%-x_e\\0%1%0%-y_e\\0%0%1%-z_e\\0%0%0%1\right)$
 
-  正交投影 透视投影
-  正交投影一个长方形  $M_{ortho}=\left(\right)$（太简单了,不写了，平移+缩放）
+  正交投影 透视投影 （其实讲了很久，只不过不好记）
+  l(eft) r(ight) b(ottom) t(op) f(ront) n
+  正交投影一个长方形  $M_{ortho}=\left(\frac{2}{r-l}%0%0%0\\0%\frac{2}{r-l}%0%0\\0%0%\frac{2}{r-l}%0\\0%0%0%\frac{2}{r-l}\right)\left(1%0%0%-\frac{r+l}{2}\\0%0%0%-\frac{t+b}{2}\\0%0%0%-\frac{n+f}{2}\\0%0%0%1\right)$
+  透视投影 长方体变梯形体 $M_{persp->ortho}=\left(n%0%0%0\\0%n%0%0\\0%0%n+f%-nf\\0%0%1%0\right)$
+  $M_{persp}=M_{ortho}M_{persp->ortho}$
+* 第五课 光栅化（三角）
+  宽高比 视角
+  垂直可视角，长宽比，水平可视角
+  $\tan\frac{fovY}{2}=\frac{t}{|n|}$
+  $aspect=\frac{r}{t}$
 
-  透视投影 长方体变梯形体 $M_{persp->ortho}$ $M_{persp}=M_{persp->ortho}$
-  
+  采样是否在三角形内部，使用三个叉乘
+
+  是否在屏幕内使用包围盒，长条型经过旋转的三角形比较适合

@@ -1,0 +1,100 @@
+#+title: s.el
+#+roam_tags: emacs string
+别的语言标准库的函数，都在s.el里
+
+#+BEGIN_SRC elisp
+  (require 's) ;; 
+#+END_SRC
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-trim-left "  a  "))
+#+END_SRC
+
+#+RESULTS:
+: form |a  |
+  
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-trim-right "  a  "))
+#+END_SRC
+
+#+RESULTS:
+: form |  a|
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-trim "  a  "))
+#+END_SRC
+
+#+RESULTS:
+: form |a|
+
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-chomp "  a  \n\n\n"))
+#+END_SRC
+
+#+RESULTS:
+: form |  a  
+: 
+: |
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-collapse-whitespace "  a  b       c   d efg"))
+#+END_SRC
+
+#+RESULTS:
+: form | a b c d efg|
+
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-word-wrap 5 "A lot of characters here"))
+#+END_SRC
+
+#+RESULTS:
+: form |A lot
+: of
+: characters
+: here|
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-center 5 "A"))
+#+END_SRC
+
+#+RESULTS:
+: form |  A  |
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-pad-left 5 "0" "A"))
+#+END_SRC
+
+#+RESULTS:
+: form |0000A|
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-pad-right 5 "0" "A"))
+#+END_SRC
+
+#+RESULTS:
+: form |A0000|
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-truncate 5 "123456789"))
+#+END_SRC
+
+#+RESULTS:
+: form |12...|
+
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-left 5 "123456789"))
+#+END_SRC
+
+#+RESULTS:
+: form |12345|
+
+#+BEGIN_SRC elisp
+  (format "form |%s|" (s-right 5 "123456789"))
+#+END_SRC
+
+#+RESULTS:
+: form |56789|
