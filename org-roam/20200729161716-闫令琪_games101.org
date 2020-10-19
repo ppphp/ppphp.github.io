@@ -161,3 +161,19 @@
   $r(t)=o+td$
 
   MT算法$O+tD=(1-b_1-b_2)P+b_1P_1+b_2P_2$
+
+  双向反射分布函数 分配反射能量的函数 $f_r(\omega_i\to\omega_r)=\frac{dL_r(\omega_r)}{dE_i}$
+
+  反射方程$L_r(p,\omega_r)=\integral_{H^2}f_r(p,\omega_i\to\omega_r)L_i(p,\omega_i)\cos\theta_id\omega_i$
+
+  渲染方程$L_o(p,\omega_o)=L_e(p,\omega_o)+\integral_{\Omega^+}L_i(p,\omega_i)f_r(p,\omega_i,\omega_o)(n\dot\omega_i)d\omega$
+
+  $I(u)=e(u)+\IntegralI(v) K(u,v)dv$ $L=E+KL => L=E+KE+K^2E+K^3E...$
+* 光线追踪
+  路径追踪
+
+  蒙特卡洛法 举例：点光源在半球上加一个估计器，做采样
+
+  全局光照在点上再递归
+
+  俄罗斯轮盘赌方法停止光的反射
