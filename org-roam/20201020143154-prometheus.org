@@ -1,0 +1,14 @@
+#+title: prometheus
+#+roam_tags: monitor self-host
+[[https://github.com/prometheus/prometheus][repo]] [[https://prometheus.io/][home]]
+* 功能
+  采集
+  - 服务发现
+  存储
+  - tsdb
+  - 远程存储
+  - 迁移
+  查询
+  - promql
+  - 报警
+  - api
