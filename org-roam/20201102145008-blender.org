@@ -1,0 +1,28 @@
+#+title: blender
+#+roam_tags: graphic c
+* cmake
+
+  一般的option都有，比如python,x11,boost,gmp这种
+
+  还有计算的库
+  - fftw3::傅立叶级数
+  - bullet::物理引擎
+  - OpenColorIO::颜色
+  - openxr::拓展现实
+  - openimagedenoise::除噪
+  - potrace::点阵转向量
+  - openvdb::稀疏运算
+  - quadriflow::重栅格化
+  - freestyle::边缘渲染
+
+  一些标准库，比如图像的exr,openimage,tiff等等，视频的ffmpeg，avi等等，栅格的alembic，场景的usd，3d的opencollada，音频的sdl,openal,jack,压缩的lzma，运动的libmv等
+
+  cycle渲染引擎有很多加速库，比如osl,embree,cuda,cubin
+
+  jemelloc,valgrind
+
+  gl支持
+
+  
+
+  
