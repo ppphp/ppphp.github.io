@@ -1,0 +1,18 @@
+#+title: 胡渊鸣_games201
+#+roam_tags: graphics games lesson
+* taichi
+  ti.init
+
+  @kernel
+
+  @function
+
+  ti.i32 ti.f32
+
+  tensor
+
+  matrix
+* 拉格朗日视角
+  弹簧质点模型
+
+  显式时间积分器$\deltat\lec\sqrt{\frac{m}{k}}$
