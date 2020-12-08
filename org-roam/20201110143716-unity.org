@@ -1,0 +1,20 @@
+#+title: unity
+#+roam_tags: game editor
+
+unity hub
+
+组件
+
+mesh renderer
+
+视锥
+
+射线
+
+多细节层次，降低面数
+
+全局光照
+
+烘焙全局光照
+
+间接光照
