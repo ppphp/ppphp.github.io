@@ -1,0 +1,40 @@
+#+title: 胡渊鸣_games201
+#+roam_tags: graphics games lesson
+* taichi
+  ti.init
+
+  @kernel
+
+  @function
+
+  ti.i32 ti.f32
+
+  tensor
+
+  matrix
+* 拉格朗日视角
+  弹簧质点模型
+
+  显式时间积分器$\deltat\lec\sqrt{\frac{m}{k}}$
+
+  隐式积分器，线性方程，牛顿法，雅各布法，高斯法，共轭梯度
+
+  平滑粒子流体动力学，材料导数
+
+  邻居搜索
+* 拉格朗日视角
+  压力张量
+  
+  弹性模量，杨式模量，柏松比
+
+  超弹性模型
+
+  线性三角网格有限元
+
+  ti.classmethod
+
+  ti.template()
+
+  ti.static
+
+  自动微分
