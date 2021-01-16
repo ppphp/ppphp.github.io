@@ -42,17 +42,38 @@
 
    lease timetolive 查看ttl
 
-* 内部架构
+   
+* 文件结构
+  比较乱，没什么层次
 
-** log
-   默认使用zap，文档里的capnslog已经deprecated了
+  服务器主文件在server/main.go，其他服务器实现也在server/下
 
-** monitor
-   在/metrics里面
+  ctl主文件在etcdctl/main.go
 
-* 进阶用法
+  主要先看server下
+** 基本服务器实现
 
-* 内部实现
+*** log
+    默认使用zap，文档里的capnslog已经deprecated了
+
+*** monitor
+    在/metrics里面
+
+*** cmd
+    使用cobra
+    
+** 逻辑分发
+   在
+
+    
+   
+* etcd实现
+  主要是实现可以服务发现的接口
+  
+** 接口
+   提供http和protobuf的接口
 
 ** raft
+
+** 存储
 
