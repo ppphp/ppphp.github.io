@@ -12,7 +12,7 @@
 ** 编译安装
    make即make build,即./build本地的一个shell脚本
 
-   编译出来两个bin
+   编译出来两个可执行文件
    - ./bin/etcd :: 是拿来跑的server，单机也可以启动
    - ./bin/etcdctl :: 是相当于client类似功能的东西，更主要是控制
   
@@ -41,16 +41,32 @@
    lease keep-alive 这个hash可以续
 
    lease timetolive 查看ttl
-
    
 * 文件结构
   比较乱，没什么层次
 
-  服务器主文件在server/main.go，其他服务器实现也在server/下
+  - api :: 不知道干嘛的
+  - bin :: 打出来的二进制放的地方，运行makefile才会有
+  - client :: 放客户端，v2和v3对应的是不兼容的服务器版本，两者不是同一种功能的提升
+  - contrib :: 一些工具的配置文件，运维用的
+  - default.etcd :: 初始数据的例子
+  - Documentation :: markdown文档
+  - etcdctl :: etcdctl的逻辑
+  - hack :: 一些工具配置文件，开发用的
+  - pkg :: 一些逻辑
+  - raft :: raft
+  - scripts :: 开发脚本
+  - security :: 一些文档，没啥用
+  - server :: 服务器逻辑
+  - tests :: 针对二进制功能的测试文件
+  - tools :: 一些脚本工具，类似于mysqldump
+  
+** 入口文件
+   服务器主文件在server/main.go，其他服务器实现也在server/下
 
-  ctl主文件在etcdctl/main.go
+   ctl主文件在etcdctl/main.go
 
-  主要先看server下
+   当然我们主要用的是server
 ** 基本服务器实现
 
 *** log
@@ -63,8 +79,27 @@
     使用cobra
     
 ** 逻辑分发
-   在
+   在server/etcd.go:startEtcdOrProxyV2里
 
+   判断运行模式，有server和proxy两种，但是主要我们用的还是server
+   
+*** config
+    初始化config在server/config.go里
+    flag用的是标准库的flag，continueonerror
+    
+** 主逻辑
+   从startEtcd到server/embed/etcd.go
+
+   读取之前的文件，data文件夹这种
+
+   有自己的config方法，不过都是之前引过来重新组合的
+
+   start方法是运行
+
+   有peer, client, monitor三个主要服务，
+   - peer处理来自其他etcd的请求，是一个包装成http的grpc服务
+   - client处理用户请求，也是同样的包装
+   - monitor搞一些监控内容
     
    
 * etcd实现
