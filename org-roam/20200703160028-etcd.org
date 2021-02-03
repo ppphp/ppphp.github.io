@@ -79,9 +79,17 @@
     使用cobra
     
 ** 逻辑分发
-   在server/etcd.go:startEtcdOrProxyV2里
+   在server/etcdmain/etcd.go:startEtcdOrProxyV2里
 
-   判断运行模式，有server和proxy两种，但是主要我们用的还是server
+   常规操作，初始化config和log
+
+   判断运行模式，有server和proxy两种
+
+   他会从文件名判断一下，这两种模式的文件夹名不同，如果已有文件检查到哪个就运行哪个
+
+   然后看是不是server满了，满了，而且一个fallback的选项打开了之后，就还是proxy，没打开就退出了
+
+   主要我们用的还是server，也主要看这个
    
 *** config
     初始化config在server/config.go里
