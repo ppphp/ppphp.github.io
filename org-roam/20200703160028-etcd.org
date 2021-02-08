@@ -7,6 +7,8 @@
   [[https://etcd.io/][doc]]
   [[https://github.com/etcd-io][git]]
 
+  3.5的etcd和之前的版本有很大的不同，主要是因为go mod导致的文件路径改动
+  
 * 把玩一下
 
 ** 编译安装
@@ -98,7 +100,17 @@
 ** 主逻辑
    从startEtcd到server/embed/etcd.go
 
-   读取之前的文件，data文件夹这种
+   一开头调用外部Config的validate方法，这个方法干的事情很多
+   - 确认log输出
+     - 输出路径，里面有一个/dev/null就全部不输出
+     - 日志等级
+     - 是否用journal
+     - 记录grpclog的日志
+     - 记录tls的日志
+   - 几个url只能是ip，Unix路径和localhost，但是hosturl可以是域名
+   - 还有一些raft和存储的配置，比如不能等于0，大于几倍这种
+
+   之后读取之前的文件，data文件夹这种
 
    有自己的config方法，不过都是之前引过来重新组合的
 
