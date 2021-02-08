@@ -1,0 +1,3 @@
+[submodule "org-roam"]
+	path = org-roam
+	url = git@github.com:ppphp/notes
