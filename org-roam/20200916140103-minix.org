@@ -1,4 +1,0 @@
-#+title: minix
-#+roam_tags: os
-
-

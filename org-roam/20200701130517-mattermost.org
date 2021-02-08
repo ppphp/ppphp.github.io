@@ -1,7 +1,0 @@
-#+title: mattermost
-#+roam_tags: self-host chat
-* 安装
-  docker-compose
-  配置到traefik的网络
-* 初始化配置
-  自动点击配置

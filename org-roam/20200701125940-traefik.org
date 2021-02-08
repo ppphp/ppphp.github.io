@@ -1,8 +1,0 @@
-#+title: traefik
-#+roam_tags: self-host gateway
-* 安装
-  docker-compose安装
-* 版本
-  v1版本比较好用，v2什么东西
-* 配置
-  配置docker-compose的label字段
