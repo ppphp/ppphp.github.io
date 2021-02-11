@@ -1,4 +1,0 @@
-#+title: pixi.js
-#+roam_tags: rendering browser
-
-https://www.pixijs.com/
