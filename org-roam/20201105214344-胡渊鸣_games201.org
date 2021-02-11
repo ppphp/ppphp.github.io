@@ -38,3 +38,38 @@
   ti.static
 
   自动微分
+* 欧拉视角
+  $\frac{D}{Dt}=\frac{\partial}{\partialt}_u\dot\nabla$
+
+  变成$\frac{Du}{Dt}=0, \frac{D\alpha}{Dt}=0; \frac{\partialu}{\partialt}=g; \frac{\partialu}{\partialt}=-\frac{1}{\pho}\nablap$
+
+  半拉格朗日移流，中点法rk2
+
+  BFECC和MacCormack移流
+
+  空间离散化2d $(\nabla\dot\nablap)_{i,j}=\frac{1}{\deltax^2}(-4p_{i,j}+p_{i+1,j}+p_{i-1,j}+p_{i,j-1}+p_{i,j+1})$
+
+  共轭梯度
+
+  多网格
+* 多体问题和涡方法
+  说的都是啥
+* 弹性线性有限元和拓扑优化
+  弱公式 $\nabla\dot\nablau=0 \leftrightarrow \forallw,\integral\integral_\Omega w(\nabla\dot\nablau)dA=0$ 
+* 混合欧拉-拉格朗日视角
+  欧拉损失能量和细节
+
+  拉格朗日粒子一等，欧拉网格二等
+
+  粒子到网格，网格操作，回到粒子，更新粒子
+
+  算速度，收集速度
+
+  mpm方法
+* 混合欧拉-拉格朗日视角
+  MLS-MPM
+* 高性能计算和物理引擎
+  cacheline
+* 总结
+  
+   
