@@ -1,0 +1,7 @@
+* my blog
+
+** format
+
+mostly in org, convert to markdown by [[https://github.com/larstvei/ox-gfm][ox-gfm]].
+
+css would be reformatted. Now I am using [[https://github.com/kamikat/jekyll-theme-kagami][Kagami]].
