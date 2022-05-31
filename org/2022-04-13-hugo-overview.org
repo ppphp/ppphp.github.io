@@ -1,0 +1,17 @@
+#+TITLE: hugo overview
+#+TAGS: blog
+
+[[https://gohugo.io/][官网]]
+[[https://github.com/gohugoio/hugo][github主页]]
+
+hugo是一个用go编写的博客生成器。
+
+选择他的原因首先是因为他原生支持org。
+
+然后我也对go比较熟悉，比较喜欢go这门语言的工具，写的很舒服而且性能不错，语言也在往好的地方更新。
+
+再次静态文件也方便我们搞一些定制的功能，一般都是纯前端，都可以作一个前端app。
+
+缺点也很明显，需要生成结果，会导致git文件比较大，我比较在意这个，但是没什么好办法了。
+
+先添加一个theme，写入config.toml

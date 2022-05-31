@@ -1,0 +1,134 @@
+#+TITLE: go 1.18
+#+TAGS: go
+
+go 1.18带入了一个非常重要的特性，type parameter类型参数，所以特地学习一下这个版本。
+
+首先，go之前是没有泛型的，有的是 ~interface{}~ 这样的限制类型拥有方法的接口。
+
+#+BEGIN_SRC go
+  type MyInterface interface {
+	  func1(int) int
+  }
+#+END_SRC
+
+定义了一个接口，符合这个接口，必须要一个拥有名为func1函数，并且满足参数和返回值类型的类
+
+具体使用，可以是在类或者是函数定义中
+
+#+BEGIN_SRC go
+    type MyStruct struct {
+	    elem1 Myinterface
+    }
+  
+    func MyFunction(m MyInterface) Myinterface {
+	  return m
+  }  
+#+END_SRC
+
+以上定义了一个有着接口的类，还有一个有着接口的参数和返回值的函数
+
+接口还有个用处，在给类继承的时候，可以有一个类似于虚基类的效果，强制这个类一定要实现这些接口函数
+
+#+BEGIN_SRC go
+    type MyDerive struct {
+	    Myinterface
+    }
+  
+    func (m *Myderive)func1(i int) int {
+	  return i
+  }  
+#+END_SRC
+
+其中interface{}是一个特殊的接口，有函数的接口一定要是一个指针，但是空接口可以是任意类型，包括值类型。
+
+接口也可以做类型断言。
+
+#+BEGIN_SRC go
+      func assert(param interface{}) bool {
+  _, ok := param.(MyInterface)
+	  return ok
+  }
+#+END_SRC
+
+接口大部分情况下都够用了，但是有两个问题
+
+首先go不支持重载，写一些函数，比如一些简单的int加减，换个类型就要重写一遍了。可能不直观，比如一些 ~map[string]XXX~ 的函数，我们只想对键做操作，但是值的类型不一样就得重新写一遍函数，就很麻烦。
+
+然后有一个接口的原因，就是函数输入的接口和返回的接口经常是同一个，但是go不能保证，就每次返回要重新类型判断一下，也很麻烦，也不方便做一些高级抽象，虽然go对高级抽象是深恶痛绝。
+
+所以go1.18准备了一个泛型的功能，首先是函数
+
+#+BEGIN_SRC go  
+    func GenericFunction[T any](param T) T {
+	  return param
+  }
+#+END_SRC
+
+这样就不用担心输入输出的问题了
+
+#+BEGIN_SRC go  
+    type GenericStruct[T any]{
+	  val T
+  }
+#+END_SRC
+
+类有一个泛型的元素
+
+使用的时候也很简单
+
+#+BEGIN_SRC go  
+  func use() {
+	  var gs GenericStruct[int]
+	  gs.val = 1
+	  Genericfunction[int](1)
+	  }
+#+END_SRC
+
+还是比较容易的
+
+然后是一些使用的功能
+
+首先是波浪线，表示一个同样的类型。一般来说如果有具名的定义的话，类型是不能隐式转换的，一定要手动改一下，但是前面加一个波浪线就无敌了
+
+#+BEGIN_SRC go  
+    type myString string
+  
+    func GenericFunction2[T ~int|~string](param T) T {
+	  return param
+  }  
+  
+  func use() {
+	  Genericfunction2(myString(""))
+	  }
+#+END_SRC
+
+这是可以编译过的
+
+这里竖线代表一个积类型，可以方便的定义一群类型，最典型的是 ~Number~ 类型
+
+#+BEGIN_SRC go
+  type Number interface {
+      int64 | float64
+  }
+#+END_SRC
+
+go给需要等于号的定义了一个comparable，go还是非常抠门的没给等于号一个定义什么的
+
+#+BEGIN_SRC go
+    func GenericFunction2[T comparable](param map[T]string) map[T]string {
+	  return param
+  }
+#+END_SRC
+
+除此之外，any本身是一个interface{}的别名，一般都any
+
+类型的空值，这里是没有定义的，只能尝试定义一下，然后判断，当然，也需要可等性
+
+#+BEGIN_SRC go
+    func IsEmpty[T comparable](param T) bool {
+	  var empty T
+	  return param == empty
+  }
+#+END_SRC
+
+一般时候，接口和泛型是用同一种东西，也共用interface的关键字，但是有了comparable之后，就不能作为接口了，只能作为类型限制

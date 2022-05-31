@@ -1,0 +1,5 @@
+baseURL = 'https://ppphp.github.io/'
+languageCode = 'zh-cn'
+title = "ppphp's home"
+
+theme = "PaperMod"

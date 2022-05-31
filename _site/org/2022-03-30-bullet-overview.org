@@ -1,0 +1,7 @@
+#+TITLE: bullet3 overview
+#+TAGS: physical engine
+
+bullet3最近有一个小更新，不妨从此了解以下bullet3作为一个物理引擎是做什么的。
+
+我以前也不知道什么是物理引擎，今天学习一下。
+

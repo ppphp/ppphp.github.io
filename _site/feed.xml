@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://ppphp.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ppphp.github.io/" rel="alternate" type="text/html" /><updated>2021-02-23T17:13:35+08:00</updated><id>https://ppphp.github.io/feed.xml</id><title type="html">a usr/bin</title><subtitle>go developer emacs user gentoo user jazz guitar player</subtitle><entry><title type="html">Weekly Report</title><link href="https://ppphp.github.io/2020/07/20/weekly-report.html" rel="alternate" type="text/html" title="Weekly Report" /><published>2020-07-20T00:00:00+08:00</published><updated>2020-07-20T00:00:00+08:00</updated><id>https://ppphp.github.io/2020/07/20/weekly-report</id><content type="html" xml:base="https://ppphp.github.io/2020/07/20/weekly-report.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-30T20:16:51+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">a usr/bin</title><subtitle>go developer emacs user gentoo user jazz guitar player</subtitle><entry><title type="html">Weekly Report</title><link href="http://localhost:4000/2020/07/20/weekly-report.html" rel="alternate" type="text/html" title="Weekly Report" /><published>2020-07-20T00:00:00+08:00</published><updated>2020-07-20T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/20/weekly-report</id><content type="html" xml:base="http://localhost:4000/2020/07/20/weekly-report.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#orgcdd540c&quot;&gt;20200713-20200720一周总结&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#orgf10d04f&quot;&gt;工作&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#org3791a30&quot;&gt;节拍器&lt;/a&gt;&lt;/li&gt;
@@ -61,7 +61,7 @@
 
 &lt;h1 id=&quot;下周展望&quot;&gt;下周展望&lt;/h1&gt;
 
-&lt;p&gt;把ldap的环境配置好 看看org-journal用一用，不然org学了没用，但是其实也不太好用 总觉得年底能出点东西，爵士学完了，画画可能也学完了，手头的垃圾小东西也写完了，portago也重新能跑了。 把auctex配置好，简历更新一下 把键盘作业补一下&lt;/p&gt;</content><author><name></name></author><summary type="html">20200713-20200720一周总结 工作 节拍器 rss服务 portage重写 爵士学习 sys-admin 下周展望</summary></entry><entry><title type="html">My Emacs Practice</title><link href="https://ppphp.github.io/2020/06/12/my-emacs-practice.html" rel="alternate" type="text/html" title="My Emacs Practice" /><published>2020-06-12T00:00:00+08:00</published><updated>2020-06-12T00:00:00+08:00</updated><id>https://ppphp.github.io/2020/06/12/my-emacs-practice</id><content type="html" xml:base="https://ppphp.github.io/2020/06/12/my-emacs-practice.html">&lt;ul&gt;
+&lt;p&gt;把ldap的环境配置好 看看org-journal用一用，不然org学了没用，但是其实也不太好用 总觉得年底能出点东西，爵士学完了，画画可能也学完了，手头的垃圾小东西也写完了，portago也重新能跑了。 把auctex配置好，简历更新一下 把键盘作业补一下&lt;/p&gt;</content><author><name></name></author><summary type="html">20200713-20200720一周总结 工作 节拍器 rss服务 portage重写 爵士学习 sys-admin 下周展望</summary></entry><entry><title type="html">My Emacs Practice</title><link href="http://localhost:4000/2020/06/12/my-emacs-practice.html" rel="alternate" type="text/html" title="My Emacs Practice" /><published>2020-06-12T00:00:00+08:00</published><updated>2020-06-12T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/12/my-emacs-practice</id><content type="html" xml:base="http://localhost:4000/2020/06/12/my-emacs-practice.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#org9a48049&quot;&gt;我的emacs实践（持续更新 2020-06-13-2020-06-22）&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#orgb556eca&quot;&gt;我用emacs之前的编辑器&lt;/a&gt;&lt;/li&gt;
@@ -214,7 +214,63 @@
 
     &lt;p&gt;复制 M-w，粘贴C-y，剪切C-w，撤销C-/。四个快捷键，就这么简单。&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">我的emacs实践（持续更新 2020-06-13-2020-06-22） 我用emacs之前的编辑器 我的emacs入门 emacs基本键位 emacs最重要的快捷键 elisp是什么 编辑简单代码需要什么 单文件编辑 emacs里做以上的功能</summary></entry><entry><title type="html">2020-03-29 一周总结</title><link href="https://ppphp.github.io/weekly/2020/03/30/weekly-report.html" rel="alternate" type="text/html" title="2020-03-29 一周总结" /><published>2020-03-30T07:31:15+08:00</published><updated>2020-03-30T07:31:15+08:00</updated><id>https://ppphp.github.io/weekly/2020/03/30/weekly-report</id><content type="html" xml:base="https://ppphp.github.io/weekly/2020/03/30/weekly-report.html">&lt;p&gt;上周忘记写了，主要也没干什么。&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">我的emacs实践（持续更新 2020-06-13-2020-06-22） 我用emacs之前的编辑器 我的emacs入门 emacs基本键位 emacs最重要的快捷键 elisp是什么 编辑简单代码需要什么 单文件编辑 emacs里做以上的功能</summary></entry><entry><title type="html">2020-04-20 一周总结</title><link href="http://localhost:4000/weekly/2020/04/21/weekly-report.html" rel="alternate" type="text/html" title="2020-04-20 一周总结" /><published>2020-04-21T07:31:15+08:00</published><updated>2020-04-21T07:31:15+08:00</updated><id>http://localhost:4000/weekly/2020/04/21/weekly-report</id><content type="html" xml:base="http://localhost:4000/weekly/2020/04/21/weekly-report.html">&lt;h1 id=&quot;工作&quot;&gt;工作&lt;/h1&gt;
+&lt;p&gt;这周把swag看了一边改了一边，差不多看懂了。&lt;/p&gt;
+
+&lt;p&gt;这周做了个小服务，很小，也没啥意思。&lt;/p&gt;
+
+&lt;h1 id=&quot;学习&quot;&gt;学习&lt;/h1&gt;
+&lt;p&gt;这周没去上画画课，是想休息一下，周末一天3小时，有点占时间其实。&lt;/p&gt;
+
+&lt;p&gt;这周吉他没怎么练，但是练了上周的吉他音阶，好难，吉他的音阶是真的8行，我都不知道我爬格子爬了啥。
+键盘作业没看，我靠看了一眼今天交，tmd。。。。鼓作业看不懂，不过应该不急，有时间练。&lt;/p&gt;
+
+&lt;p&gt;看了点jekyll代码，这玩意代码真不好看，看半天看不出个头&lt;/p&gt;
+
+&lt;h1 id=&quot;业余&quot;&gt;业余&lt;/h1&gt;
+&lt;p&gt;啥都没好好干，但是睡够了是确实。&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">工作 这周把swag看了一边改了一边，差不多看懂了。</summary></entry><entry><title type="html">jekyll源码观看</title><link href="http://localhost:4000/source-code/2020/03/31/jekyll-source.html" rel="alternate" type="text/html" title="jekyll源码观看" /><published>2020-03-31T07:31:15+08:00</published><updated>2020-03-31T07:31:15+08:00</updated><id>http://localhost:4000/source-code/2020/03/31/jekyll-source</id><content type="html" xml:base="http://localhost:4000/source-code/2020/03/31/jekyll-source.html">&lt;h1 id=&quot;jekyll&quot;&gt;jekyll&lt;/h1&gt;
+
+&lt;p&gt;因为我比较喜欢ruby，所以想用jekyll作为博客平台。然后因为在搞emacs所以想用org写文档，然后jekyll官方不支持，所以想自己搞个大大的插件，先从源码看起。&lt;/p&gt;
+
+&lt;h2 id=&quot;项目结构&quot;&gt;项目结构&lt;/h2&gt;
+
+&lt;h3 id=&quot;组织架构&quot;&gt;组织架构&lt;/h3&gt;
+&lt;p&gt;首先我们看到.github文件夹下的CODEOWNER，分了6个组&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;build组做核心渲染&lt;/li&gt;
+  &lt;li&gt;ecosystem组做插件，我主要看这个咯&lt;/li&gt;
+  &lt;li&gt;stability组做ci&lt;/li&gt;
+  &lt;li&gt;documentation组写文档&lt;/li&gt;
+  &lt;li&gt;windows组做windows&lt;/li&gt;
+  &lt;li&gt;affinity team captions组基本就是大佬管管github配置文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;参数&quot;&gt;参数&lt;/h3&gt;
+&lt;p&gt;cli他们自己写了一个库叫mercenary来管理命令行参数，这个具体我就不看了。。。就看看参数&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;source,s 源码地址，也就是项目地址&lt;/li&gt;
+  &lt;li&gt;destination,d 目标地址，生成的markdown渲染html就到这里&lt;/li&gt;
+  &lt;li&gt;safe安全模式&lt;/li&gt;
+  &lt;li&gt;plugins_dir,p 插件地址&lt;/li&gt;
+  &lt;li&gt;layouts_dir 布局地址&lt;/li&gt;
+  &lt;li&gt;profile 个人介绍&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;初始化&quot;&gt;初始化&lt;/h2&gt;
+&lt;p&gt;exe里可以看到mercenary把命令封装的特别好，以至于我都不知道它是怎么跑起来的了，我觉得block里的是初始化，因为我看他最后p.subcommand还在找。&lt;/p&gt;
+
+&lt;p&gt;于是直接进入下一步，看lib里的jekyll.rb这个文件，这个里面一堆autoload，我就知道，直接看commands里的代码就对了。&lt;/p&gt;
+
+&lt;h2 id=&quot;命令&quot;&gt;命令&lt;/h2&gt;
+
+&lt;p&gt;jekyll的命令还挺好看的，在commands里一眼就看的出来。&lt;/p&gt;
+
+&lt;h3 id=&quot;build&quot;&gt;build&lt;/h3&gt;
+&lt;p&gt;new和new_theme这种太傻了，没啥看的，然后干啥都得build，先看build。&lt;/p&gt;
+
+&lt;p&gt;build在 jekyll/commands/build.rb里，这个文件也是很简单的。init里啥也没有，然后process方法封装了一下就调了build方法。&lt;/p&gt;
+
+&lt;p&gt;然后转到site.process方法，这是个啥，我看不懂了，卡壳了。。。&lt;/p&gt;</content><author><name></name></author><category term="source-code" /><summary type="html">jekyll</summary></entry><entry><title type="html">2020-03-29 一周总结</title><link href="http://localhost:4000/weekly/2020/03/30/weekly-report.html" rel="alternate" type="text/html" title="2020-03-29 一周总结" /><published>2020-03-30T07:31:15+08:00</published><updated>2020-03-30T07:31:15+08:00</updated><id>http://localhost:4000/weekly/2020/03/30/weekly-report</id><content type="html" xml:base="http://localhost:4000/weekly/2020/03/30/weekly-report.html">&lt;p&gt;上周忘记写了，主要也没干什么。&lt;/p&gt;
 
 &lt;h1 id=&quot;工作&quot;&gt;工作&lt;/h1&gt;
 &lt;p&gt;补充了一下分布式锁的实现，其实补充完也没比补充之前好多少，主要也就是一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set nx&lt;/code&gt;的实现，然后加一些参数，不是很复杂其实。&lt;/p&gt;
@@ -230,7 +286,7 @@
 
 &lt;p&gt;打鼓的地方还没高兴找，礼拜六顺便找了下，那家店搬家了，礼拜一再找吧。天天下雨不是很想出门。&lt;/p&gt;
 
-&lt;p&gt;之后作息也得调整，每天都得练，搞个app规范下什么的，但是用了半年的手机老是发烫，非常烦人。&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">上周忘记写了，主要也没干什么。</summary></entry><entry><title type="html">2020-03-15 一周总结</title><link href="https://ppphp.github.io/weekly/2020/03/16/weekly-report.html" rel="alternate" type="text/html" title="2020-03-15 一周总结" /><published>2020-03-16T07:31:15+08:00</published><updated>2020-03-16T07:31:15+08:00</updated><id>https://ppphp.github.io/weekly/2020/03/16/weekly-report</id><content type="html" xml:base="https://ppphp.github.io/weekly/2020/03/16/weekly-report.html">&lt;h1 id=&quot;工作&quot;&gt;工作&lt;/h1&gt;
+&lt;p&gt;之后作息也得调整，每天都得练，搞个app规范下什么的，但是用了半年的手机老是发烫，非常烦人。&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">上周忘记写了，主要也没干什么。</summary></entry><entry><title type="html">2020-03-15 一周总结</title><link href="http://localhost:4000/weekly/2020/03/16/weekly-report.html" rel="alternate" type="text/html" title="2020-03-15 一周总结" /><published>2020-03-16T07:31:15+08:00</published><updated>2020-03-16T07:31:15+08:00</updated><id>http://localhost:4000/weekly/2020/03/16/weekly-report</id><content type="html" xml:base="http://localhost:4000/weekly/2020/03/16/weekly-report.html">&lt;h1 id=&quot;工作&quot;&gt;工作&lt;/h1&gt;
 
 &lt;p&gt;这周做了简单的swagger和go的研究，做了点文档。go的swagger集成真的一般般，跟gin跟结构体等等框架什么的都不能很好的结合在一起，需要长期大改。&lt;/p&gt;
 
@@ -248,7 +304,7 @@
 
 &lt;p&gt;学习了一下ember的新写法，新版的ember比以前的版本都好多了，虽然之前研究的脑残写法都荒废了。&lt;/p&gt;
 
-&lt;p&gt;第一次总结，找找灵感。&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">工作</summary></entry><entry><title type="html">github不支持org-jekyll插件</title><link href="https://ppphp.github.io/jekyll/update/2019/07/24/github-no-org.html" rel="alternate" type="text/html" title="github不支持org-jekyll插件" /><published>2019-07-24T07:31:15+08:00</published><updated>2019-07-24T07:31:15+08:00</updated><id>https://ppphp.github.io/jekyll/update/2019/07/24/github-no-org</id><content type="html" xml:base="https://ppphp.github.io/jekyll/update/2019/07/24/github-no-org.html">&lt;p&gt;那怎么办呢？难度从高到低是这样&lt;/p&gt;
+&lt;p&gt;第一次总结，找找灵感。&lt;/p&gt;</content><author><name></name></author><category term="weekly" /><summary type="html">工作</summary></entry><entry><title type="html">github不支持org-jekyll插件</title><link href="http://localhost:4000/jekyll/update/2019/07/24/github-no-org.html" rel="alternate" type="text/html" title="github不支持org-jekyll插件" /><published>2019-07-24T07:31:15+08:00</published><updated>2019-07-24T07:31:15+08:00</updated><id>http://localhost:4000/jekyll/update/2019/07/24/github-no-org</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/07/24/github-no-org.html">&lt;p&gt;那怎么办呢？难度从高到低是这样&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;自己写一个_plugins里支持一下&lt;/li&gt;
   &lt;li&gt;不管github pages，自己写着爽就行了&lt;/li&gt;
@@ -257,7 +313,7 @@
 
 &lt;p&gt;所以我还是先（3）,然后（2），同时（1），因为（1）实在是不太容易，写成gem还方便一点，也能调用别人的方法，写plugin真的有点麻烦。&lt;/p&gt;
 
-&lt;p&gt;计划是之后写几篇markdown的，然后一旦开始动笔org-mode，就切换语言写。虽然语言不是很重要，但是我还是想尝试一下新的强大的东西。&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">那怎么办呢？难度从高到低是这样 自己写一个_plugins里支持一下 不管github pages，自己写着爽就行了 用markdown糊弄一下得了</summary></entry><entry><title type="html">Org Simple Guide</title><link href="https://ppphp.github.io/2019/07/19/org-simple-guide.html" rel="alternate" type="text/html" title="Org Simple Guide" /><published>2019-07-19T00:00:00+08:00</published><updated>2019-07-19T00:00:00+08:00</updated><id>https://ppphp.github.io/2019/07/19/org-simple-guide</id><content type="html" xml:base="https://ppphp.github.io/2019/07/19/org-simple-guide.html">&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
+&lt;p&gt;计划是之后写几篇markdown的，然后一旦开始动笔org-mode，就切换语言写。虽然语言不是很重要，但是我还是想尝试一下新的强大的东西。&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">那怎么办呢？难度从高到低是这样 自己写一个_plugins里支持一下 不管github pages，自己写着爽就行了 用markdown糊弄一下得了</summary></entry><entry><title type="html">Org Simple Guide</title><link href="http://localhost:4000/2019/07/19/org-simple-guide.html" rel="alternate" type="text/html" title="Org Simple Guide" /><published>2019-07-19T00:00:00+08:00</published><updated>2019-07-19T00:00:00+08:00</updated><id>http://localhost:4000/2019/07/19/org-simple-guide</id><content type="html" xml:base="http://localhost:4000/2019/07/19/org-simple-guide.html">&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;#orgaa7d01b&quot;&gt;简单的org入门&lt;/a&gt;
@@ -358,7 +414,7 @@ function draw() {
   }
 }
 draw();
-&lt;/script&gt;</content><author><name></name></author><summary type="html">Table of Contents</summary></entry><entry><title type="html">First Blog In Org</title><link href="https://ppphp.github.io/2019/07/15/first-blog-in-org.html" rel="alternate" type="text/html" title="First Blog In Org" /><published>2019-07-15T00:00:00+08:00</published><updated>2019-07-15T00:00:00+08:00</updated><id>https://ppphp.github.io/2019/07/15/first-blog-in-org</id><content type="html" xml:base="https://ppphp.github.io/2019/07/15/first-blog-in-org.html">&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
+&lt;/script&gt;</content><author><name></name></author><summary type="html">Table of Contents</summary></entry><entry><title type="html">First Blog In Org</title><link href="http://localhost:4000/2019/07/15/first-blog-in-org.html" rel="alternate" type="text/html" title="First Blog In Org" /><published>2019-07-15T00:00:00+08:00</published><updated>2019-07-15T00:00:00+08:00</updated><id>http://localhost:4000/2019/07/15/first-blog-in-org</id><content type="html" xml:base="http://localhost:4000/2019/07/15/first-blog-in-org.html">&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;a href=&quot;#orgf4f39bb&quot;&gt;第一个org博客&lt;/a&gt;
@@ -409,7 +465,7 @@ draw();
 
 &lt;h2 id=&quot;未来一周的目标&quot;&gt;未来一周的目标&lt;/h2&gt;
 
-&lt;p&gt;学习使用org&lt;/p&gt;</content><author><name></name></author><summary type="html">Table of Contents</summary></entry><entry><title type="html">frontend hello world</title><link href="https://ppphp.github.io/jekyll/update/2018/10/22/front-end-hello-world.html" rel="alternate" type="text/html" title="frontend hello world" /><published>2018-10-22T07:31:15+08:00</published><updated>2018-10-22T07:31:15+08:00</updated><id>https://ppphp.github.io/jekyll/update/2018/10/22/front-end-hello-world</id><content type="html" xml:base="https://ppphp.github.io/jekyll/update/2018/10/22/front-end-hello-world.html">&lt;h1 id=&quot;前端小研究&quot;&gt;前端小研究&lt;/h1&gt;
+&lt;p&gt;学习使用org&lt;/p&gt;</content><author><name></name></author><summary type="html">Table of Contents</summary></entry><entry><title type="html">frontend hello world</title><link href="http://localhost:4000/jekyll/update/2018/10/22/front-end-hello-world.html" rel="alternate" type="text/html" title="frontend hello world" /><published>2018-10-22T07:31:15+08:00</published><updated>2018-10-22T07:31:15+08:00</updated><id>http://localhost:4000/jekyll/update/2018/10/22/front-end-hello-world</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/10/22/front-end-hello-world.html">&lt;h1 id=&quot;前端小研究&quot;&gt;前端小研究&lt;/h1&gt;
 
 &lt;p&gt;github page主要是为了搞前端的东西，因为这玩意就是个网页，canvas小程序什么的，结果忘了初心，搞了老半天devops去了，主要devops对我来说擅长一点，前端学习需要自己创造美术素材。。。我这个不行&lt;/p&gt;
 
@@ -430,323 +486,4 @@ function draw() {
   }
 }
 draw();
-&lt;/script&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">前端小研究</summary></entry><entry><title type="html">let’s encrypt基本操作</title><link href="https://ppphp.github.io/jekyll/update/2018/10/22/lets-encrypt.html" rel="alternate" type="text/html" title="let’s encrypt基本操作" /><published>2018-10-22T07:31:15+08:00</published><updated>2018-10-22T07:31:15+08:00</updated><id>https://ppphp.github.io/jekyll/update/2018/10/22/lets-encrypt</id><content type="html" xml:base="https://ppphp.github.io/jekyll/update/2018/10/22/lets-encrypt.html">&lt;h1 id=&quot;lets-encrypt基本操作&quot;&gt;let’s encrypt基本操作&lt;/h1&gt;
-&lt;p&gt;let’s encrypt是非常流行的免费ssl证书提供商。它非常可用，非常方便。一次申请可以免费提供有效期为三个月的ssl证书。&lt;/p&gt;
-
-&lt;p&gt;let’s encrypt的&lt;a href=&quot;https://letsencrypt.org/&quot;&gt;官网&lt;/a&gt;说的已经很详细了，但是我还是要记录一下流程。&lt;/p&gt;
-
-&lt;h2 id=&quot;certbot安装&quot;&gt;certbot安装&lt;/h2&gt;
-&lt;p&gt;首先我们使用官方的管理工具certbot。&lt;/p&gt;
-
-&lt;p&gt;这是一个python脚本，自动处理申请证书的复杂流程。一般申请证书就只需要ssl的网址，然后获得相应的pem文件。使用的时候，把pem文件放到对外的服务器，比如nginx或apache，就大功告成了。&lt;/p&gt;
-
-&lt;p&gt;let’s encrypt给大部份发行版都封装好了certbot的安装包，直接拿来用就可以了，但是centos有点问题，用贴近源码的方式，这样可以控制一点。centos包管理真的垃圾。&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;su -
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'export PYENV_ROOT=&quot;$HOME/.pyenv&quot;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bash_profile
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bash_profile
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'if command -v pyenv 1&amp;gt;/dev/null 2&amp;gt;&amp;amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bash_profile
-pyenv &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;3.7.1
-pyenv &lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;3.7.1
-pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;certbot
-certbot certonly
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;如果一步步下来能拿到证书，那就太好了，不过我自己的情况是不能拿到的，因为certbot有一套比较简单但是必要的逻辑，可能和目前环境不兼容，搞清楚问题就能方便地运行了。&lt;/p&gt;
-
-&lt;h2 id=&quot;cerbot原理&quot;&gt;cerbot原理&lt;/h2&gt;
-&lt;p&gt;接下来就是如何使用certbot了。&lt;/p&gt;
-
-&lt;h3 id=&quot;确认域名&quot;&gt;确认域名&lt;/h3&gt;
-&lt;p&gt;因为lets encrypt不要钱，所以使用上会有点限制的地方，比如要证明这个域名是我的，否则万一来个机器人刷一刷，马上亏死了。那么如何证明这个域名是我的呢？let’s encrypt会发一个http的授权信息到需要证书的某个url，然后我们用这个url收到的信息，回到它那里确认我们确实拥有这个域名。&lt;/p&gt;
-
-&lt;h3 id=&quot;服务器&quot;&gt;服务器&lt;/h3&gt;
-&lt;p&gt;于是我们需要一个服务器获取验证信息，certbot自带一个开箱即用的standalone。但是我们可能线上正在运行一个服务器，我们不想让它停下来一分钟三十秒，专门跑个certbot。而且三个月之后续期的时候，肯定影响到线上的运行。解决办法是对着我们使用的线上服务器写一个插件，预留一个url地址给let’s encrypt来做验证。&lt;/p&gt;
-
-&lt;p&gt;我一般使用nginx来做服务器。一般不用java或者不是apache插件爱好者的话，基本都用nginx了。安装certbot的nginx插件，然后在nginx上面这个域名规定一个地址转发即可。&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;cerbot-nginx
-certbot &lt;span class=&quot;nt&quot;&gt;--nginx&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;如果这一步能拿到证书，也挺好，但是我的情况还是不行。&lt;/p&gt;
-
-&lt;h3 id=&quot;阿里云&quot;&gt;阿里云&lt;/h3&gt;
-&lt;p&gt;certbot在验证的时候是访问的http的80端口，很好理解，领免费证书的穷鬼里，只开443端口不开80端口的比较少，优先照顾只有http的困难用户。但是阿里云会对没有审批的80端口的服务器的域名访问做屏蔽处理，所以我们就收不到certbot请求的验证。好在certbot足够智能，我们还有别的办法。&lt;/p&gt;
-
-&lt;p&gt;使用阿里云绝对是失误。。。尽量用国外的云或者托管来运行自己的应用。&lt;/p&gt;
-
-&lt;h3 id=&quot;dns验证&quot;&gt;DNS验证&lt;/h3&gt;
-&lt;p&gt;certbot提供了按照DNS来验证域名所有权的方式。我用通配符域名，所以申请的也是通配符的证书。&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;certbot &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.example.com &lt;span class=&quot;nt&quot;&gt;--manual&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--preferred-challenges&lt;/span&gt; dns certonly
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;然后按照它说的修改DNS的txt记录就可以了。&lt;/p&gt;
-
-&lt;h3 id=&quot;https验证&quot;&gt;https验证&lt;/h3&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">let’s encrypt基本操作 let’s encrypt是非常流行的免费ssl证书提供商。它非常可用，非常方便。一次申请可以免费提供有效期为三个月的ssl证书。</summary></entry><entry><title type="html">k8s learn</title><link href="https://ppphp.github.io/jekyll/update/2018/10/15/k8s-dashboard-registry.html" rel="alternate" type="text/html" title="k8s learn" /><published>2018-10-15T07:31:15+08:00</published><updated>2018-10-15T07:31:15+08:00</updated><id>https://ppphp.github.io/jekyll/update/2018/10/15/k8s-dashboard-registry</id><content type="html" xml:base="https://ppphp.github.io/jekyll/update/2018/10/15/k8s-dashboard-registry.html">&lt;h1 id=&quot;学习k8s&quot;&gt;学习k8s&lt;/h1&gt;
-
-&lt;p&gt;k8s太难了，单独写一下这玩意怎么搞的&lt;/p&gt;
-
-&lt;h2 id=&quot;目标&quot;&gt;目标&lt;/h2&gt;
-
-&lt;p&gt;学习使用k8s作为测试发布平台&lt;/p&gt;
-
-&lt;p&gt;自身需要安装的工具是dashboard，另外需要安装的是发布目标程序&lt;/p&gt;
-
-&lt;p&gt;在这其间还要踩一些坑，需要安装以下应用
-– ingress
-– dashboard
-– docker registry
-– https&lt;/p&gt;
-
-&lt;h2 id=&quot;ingress&quot;&gt;ingress&lt;/h2&gt;
-
-&lt;p&gt;我先安装了dashboard，但是真的要做成应用的话，ingress应该是最早安装的&lt;/p&gt;
-
-&lt;p&gt;kubernetes会把它的服务做成一个个小网络组成的集群，每个服务对应了集群的ip，想获取服务时，需要从这些虚拟ip上映射到外网ip的端口&lt;/p&gt;
-
-&lt;p&gt;其实就是一个k8s版的nginx，nginx现在吃了屎一样在追社区的ingress了&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kubectl apply &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml
-kubectl get pods &lt;span class=&quot;nt&quot;&gt;--all-namespaces&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; app.kubernetes.io/name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ingress-nginx &lt;span class=&quot;nt&quot;&gt;--watch&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;dashboard&quot;&gt;dashboard&lt;/h2&gt;
-
-&lt;p&gt;dashboard就是看看这个有个啥功能，冒个烟充充门面&lt;/p&gt;
-
-&lt;h2 id=&quot;docker-registry&quot;&gt;docker registry&lt;/h2&gt;
-
-&lt;p&gt;docker registry配合devops工具&lt;/p&gt;
-
-&lt;h2 id=&quot;https&quot;&gt;https&lt;/h2&gt;
-
-&lt;p&gt;80端口怕被阿里云封&lt;/p&gt;
-
-&lt;p&gt;devops那个我还没弄成，k8s先架起来，服务起来再说&lt;/p&gt;
-
-&lt;h2 id=&quot;基本概念&quot;&gt;基本概念&lt;/h2&gt;
-
-&lt;p&gt;厘清问题之后，我们可以回来看基本概念查漏补缺了。&lt;/p&gt;
-
-&lt;p&gt;原本以为k8s是一个方便的工具，docker放在上面就可以安稳运行了，实际上并不是，k8s反而是复杂化了问题。它的逻辑是强迫分离运维的各个组件，从而适配上高级功能。&lt;/p&gt;
-
-&lt;p&gt;k8s基本的组件分离是比较好懂的，几个docker组成一个pod，一个pod有它自己的ip地址，pod可以存在一个node上面，node就是我们登录的物理机或者是虚拟机，然后node组成一个k8s集群，管理集群的机器叫master。简单的说就是一个pod一个ip，一个node一台机器，pod相当于node上起的虚拟机。&lt;/p&gt;
-
-&lt;p&gt;k8s和docker一样，是一个运行在机器上的服务，必须用客户端与这个服务通信，正因为如此翻墙的事情我经常搞不定，用网上的yml文件最好提前下载下来。kubectl就是这样一个客户端工具，而初始化新节点就是用kubeadm。&lt;/p&gt;
-
-&lt;p&gt;现在概念才刚刚开始，之后的概念，新手的我就开始混沌了。也是我说这玩意很复杂的原因，连我都搞不定，一定是框架设计的原因。&lt;/p&gt;
-
-&lt;h2 id=&quot;网络插件&quot;&gt;网络插件&lt;/h2&gt;
-
-&lt;p&gt;首先是网络插件，为什么k8s要装网络插件呢，一个docker编排平台需要网络插件干什么？k8s的网络插件就是负责为pod分配ip的工具。我现在还不知道装哪一种比较好，总之安装完k8s之后需要马上安装一种。网络插件使用还是比较简单的，即插即用，至少在刚刚安装完的一段时间内，不用操心它的行为了。&lt;/p&gt;
-
-&lt;p&gt;之后应用调试的时候，可以直接在机器上面curl内部ip就可以访问服务了。docker原本把进程抽象成端口，k8s的网络库把docker的端口抽象成了由ip组织的端口。&lt;/p&gt;
-
-&lt;h2 id=&quot;k8s资源&quot;&gt;k8s资源&lt;/h2&gt;
-
-&lt;p&gt;kubectl可以查看k8s上运行的东西，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl get all --all-namespaces&lt;/code&gt;是获取运行内容的基本信息，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl describe all --all-namespaces&lt;/code&gt;是获取运行内容的详细信息。&lt;/p&gt;
-
-&lt;p&gt;我们注意到，抛开动词，这上面由两个参数，一个是all，还有一个是all-namespaces，第一个all是k8s运行内容，比如pod，service，deployment，daemonset等等，但是不是所有东西都会显示，第二个是选择命名空间，相当于一个标签。&lt;/p&gt;
-
-&lt;h2 id=&quot;ingress-1&quot;&gt;ingress&lt;/h2&gt;
-
-&lt;p&gt;ingress是一个服务的统一出口。k8s的pod默认不对外开放，但是在宿主机上可以访问，于是社区就想用一个类似nginx的东西来管理这些网络的对外服务。需要自己管理插件和服务，这就是ingress的复杂之处。&lt;/p&gt;
-
-&lt;p&gt;还有一种解决方案是用nodeport，每个服务分配一个port。个人觉得问题是不够灵活，ingress还可以管理二级域名，而且nodeport大规模使用非常蛋疼，因为nodeport是全局分配的，所有机器都要留一个nodeport，很不漂亮。&lt;/p&gt;
-
-&lt;h2 id=&quot;yml格式&quot;&gt;yml格式&lt;/h2&gt;
-
-&lt;p&gt;现在研究一下yml都长什么样，结构看是能看懂。&lt;/p&gt;
-
-&lt;p&gt;比如第一个下载的dashboard&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Copyright 2017 The Kubernetes Authors.&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# you may not use this file except in compliance with the License.&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# You may obtain a copy of the License at&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#     http://www.apache.org/licenses/LICENSE-2.0&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# Unless required by applicable law or agreed to in writing, software&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# distributed under the License is distributed on an &quot;AS IS&quot; BASIS,&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# See the License for the specific language governing permissions and&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# limitations under the License.&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# ------------------- Dashboard Secret ------------------- #&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Secret&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-certs&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Opaque&lt;/span&gt;
-
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# ------------------- Dashboard Service Account ------------------- #&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ServiceAccount&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# ------------------- Dashboard Role &amp;amp; Role Binding ------------------- #&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Role&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rbac.authorization.k8s.io/v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-minimal&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;rules&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Allow Dashboard to create 'kubernetes-dashboard-key-holder' secret.&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;secrets&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;create&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Allow Dashboard to create 'kubernetes-dashboard-settings' config map.&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;configmaps&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;create&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Allow Dashboard to get, update and delete Dashboard exclusive secrets.&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;secrets&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resourceNames&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-key-holder&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-certs&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;get&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;update&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;delete&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Allow Dashboard to get and update 'kubernetes-dashboard-settings' config map.&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;configmaps&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resourceNames&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-settings&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;get&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;update&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Allow Dashboard to get metrics from heapster.&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;services&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resourceNames&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;heapster&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;proxy&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;apiGroups&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;services/proxy&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;resourceNames&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;heapster&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;http:heapster:&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https:heapster:&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;verbs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;get&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rbac.authorization.k8s.io/v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;RoleBinding&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-minimal&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;roleRef&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;apiGroup&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rbac.authorization.k8s.io&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Role&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-minimal&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;subjects&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ServiceAccount&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# ------------------- Dashboard Deployment ------------------- #&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Deployment&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;apps/v1beta2&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;replicas&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;revisionHistoryLimit&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;matchLabels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;containers&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;containerPort&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8443&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;protocol&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;TCP&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;--auto-generate-certificates&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# Uncomment the following line to manually specify Kubernetes API server Host&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# If not specified, Dashboard will attempt to auto discover the API server and connect&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# to it. Uncomment only if the default does not work.&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# - --apiserver-host=http://my-address:port&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;volumeMounts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-certs&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;mountPath&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/certs&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# Create on-disk volume to store exec logs&lt;/span&gt;
-        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;mountPath&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/tmp&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;tmp-volume&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;livenessProbe&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;httpGet&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;scheme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;HTTPS&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8443&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;initialDelaySeconds&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;timeoutSeconds&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-certs&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;secret&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;na&quot;&gt;secretName&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard-certs&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;tmp-volume&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;emptyDir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;{}&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;serviceAccountName&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;# Comment the following tolerations if Dashboard must not be deployed on master&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;tolerations&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;node-role.kubernetes.io/master&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;effect&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;NoSchedule&lt;/span&gt;
-
-&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# ------------------- Dashboard Service ------------------- #&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Service&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;apiVersion&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;v1&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;metadata&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kube-system&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;443&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;targetPort&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8443&lt;/span&gt;
-      &lt;span class=&quot;na&quot;&gt;nodePort&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;443&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;NodePort&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;k8s-app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kubernetes-dashboard&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;三横是分割符，表示上下完全是两个东西，编程语言里就是两个对象或者是两个结构体。缩进分格跟python一样，yml的层级通过行首缩进实现，一般是两个空格。冒号代表map或者hash，左边是键，右边是值，右边写不下可以加两个空格的缩进，写到下一行。单横杠跟个空格代表之后是数组的元素。&lt;/p&gt;
-
-&lt;p&gt;实在不能理解的时候可以看着缩进把它看成是json，yml经常标榜自己是json的超集。&lt;/p&gt;
-
-&lt;h2 id=&quot;deployment-service&quot;&gt;deployment, service&lt;/h2&gt;
-
-&lt;p&gt;service是kubernetes管理pods的东西。service描述了pods的对外状态，比如说pod的对外端口。基本上一个service就是一个pod。上面的yml例子里，kind: Service的就是描述了一个k8s服务。&lt;/p&gt;
-
-&lt;p&gt;deployment描述了部署service的行为过程，也描述k8s资源的整合，比如镜像，持久化卷。可以说deployment才是管理everything的，所以上面那个yml也是deployment最长。&lt;/p&gt;
-
-&lt;p&gt;这两个行为是主要关心的行为，天知道k8s的人是怎么想的，给一个hello world一样的dashboard会死，一定要把secret，role binding这样有的没的的功能都加上去才能显示水平。&lt;/p&gt;
-
-&lt;h2 id=&quot;对外服务&quot;&gt;对外服务&lt;/h2&gt;
-
-&lt;p&gt;k8s的service负责管理pod对外服务，但是对于整个系统来说，默认服务不对外。&lt;/p&gt;
-
-&lt;p&gt;之前的yml是我改过的，确定nodePort和type是NodePort之后，直接就会对外了。nodeport一般情况下都会有限制，需要手动改以下配置，重启apiserver，扩充端口到可以绑定30000以下。&lt;/p&gt;
-
-&lt;p&gt;但是我觉得nodeport比较low，一个service对应一个nodeport很不优雅。因为我想用k8s来实现最终对外的行为，必须都绑定到80端口，需要nginx做二级域名的转发。&lt;/p&gt;
-
-&lt;p&gt;所以我们就建立一个nginx的服务和一个default backend的服务。&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">学习k8s</summary></entry></feed>
+&lt;/script&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">前端小研究</summary></entry></feed>
