@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>music on a usr/bin</title>
+    <link>https://ppphp.github.io/tags/music/</link>
+    <description>Recent content in music on a usr/bin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://ppphp.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>红豆分析</title>
+      <link>https://ppphp.github.io/posts/2022-03-25-hongdou/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ppphp.github.io/posts/2022-03-25-hongdou/</guid>
+      <description>https://music.163.com/#/song?id=299936 比较简单的一首歌，当然是从简单的开始。林夕作词，柳重言作曲，王菲演唱，1998年收录于《唱游》。感觉是王菲的巅峰专辑，不过我才2岁，啥也不</description>
+    </item>
+    
+  </channel>
+</rss>
