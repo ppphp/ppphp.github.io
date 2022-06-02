@@ -1,4 +1,0 @@
-#+TITLE: blender deps
-#+TAGS: visual
-
-以下收集了一下blender的依赖，都是c++的库。

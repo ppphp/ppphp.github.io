@@ -1,4 +1,0 @@
-#+TITLE: godot-overview
-#+TAGS: game engine
-
-godot是一个开源的游戏引擎，学习一下他的基本功能。

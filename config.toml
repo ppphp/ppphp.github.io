@@ -1,5 +1,7 @@
 baseURL = 'https://ppphp.github.io/'
 languageCode = 'zh-cn'
-title = "ppphp's home"
+title = "a usr/bin"
 
 theme = "PaperMod"
+# contentDir="org"
+hasCJKLanguage=true

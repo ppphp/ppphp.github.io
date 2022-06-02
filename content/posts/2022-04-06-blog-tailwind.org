@@ -1,0 +1,4 @@
+#+TITLE: blog tailwind
+#+TAGS[]: blog
+
+tailwind是比较流行的css框架，现在用它来优化我们的博客。

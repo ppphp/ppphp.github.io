@@ -1,4 +1,0 @@
-#+TITLE: hidden markov model
-#+TAGS: math
-
-上学的时候学了马尔可夫过程，现在复习一下知识点

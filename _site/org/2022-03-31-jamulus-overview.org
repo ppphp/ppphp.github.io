@@ -1,4 +1,0 @@
-#+TITLE: jamulus overivew
-#+TAGS: audio
-
-jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。

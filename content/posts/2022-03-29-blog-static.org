@@ -1,0 +1,11 @@
+#+TITLE: static org
+#+TAGS[]: hugo
+
+jekyll实现org直出，需要实现一个静态文件的设计，和org渲染器。
+
+js ajax -> org目录 -> org渲染器
+
+但是jekyll和js做这个很不方便，这玩意战斗力真的有限，改用hugo了。
+
+hugo原生支持org文件,也可以用ox-hugo,先玩玩看这个
+
