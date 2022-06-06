@@ -1,5 +1,6 @@
 #+TITLE: hugo overview
 #+TAGS[]: blog
+* hugo介绍
 
 [[https://gohugo.io/][官网]]
 [[https://github.com/gohugoio/hugo][github主页]]
@@ -14,4 +15,68 @@ hugo是一个用go编写的博客生成器。
 
 缺点也很明显，需要生成结果，会导致git文件比较大，我比较在意这个，但是没什么好办法了。
 
-先添加一个theme，写入config.toml
+* 本地运行
+先添加一个theme，写入config.toml，我随便选了一个
+
+#+BEGIN_SRC toml
+theme = "PaperMod"
+#+END_SRC
+
+这个主题好像有点笨笨的，不能手动设置contentDir，所以把所有的文件都放入 ~content/posts~ 下
+
+运行 ~hugo server~ 就可以看到文章了
+
+* 部署
+然后运行 ~hugo -D~ 是一键生成静态文件在 ~public~ 文件夹下，当然这个不用手动做，用github-ci就行，现在很方便了。
+
+新建一个文件夹 ~.github/workflows~ ，我一开始少了个s研究了半天怎么没启动。。。
+
+创建管线就是创建一个yml文件，可以是任何的名字，我起了 ~gh-pages.yml~
+
+#+BEGIN_SRC yaml
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.91.2'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+#+END_SRC
+
+这个管线做的事情是当master push之后，~Setup Hugo~ 会安装hugo， ~Build~ 会生成 ~/public~ ，~Deploy~ 会把 ~/public~ push到gh-pages这个分支上。
+
+那这里master是指工程代码，也就是hugo这个project的代码，而非产物。
+
+gh-pages是在项目里设置pages的分支。是jekyll项目的话可以自动部署项目，我们不是jekyll，是hugo，所以只能部署产物。
+
+~secrets.GITHUB_TOKEN~ 也是项目里设置的一个公私钥。
+
+配置了以上两个就可以看github action启动了。
+
+cheers.

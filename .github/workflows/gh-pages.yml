@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - blog  # Set a branch to deploy
+      - master
   pull_request:
 
 jobs:
@@ -28,8 +28,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/blog' }}
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: master
+          publish_branch: gh-pages
