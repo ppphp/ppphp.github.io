@@ -1,5 +1,6 @@
 #+TITLE: org simple guide
 #+LAYOUT: post
+#+DATE: 2019-07-19
 #+TAGS[]: jekyll org-mode
 
 * 简单的org入门

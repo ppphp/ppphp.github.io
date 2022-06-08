@@ -1,5 +1,6 @@
 #+TITLE: first blog in org
 #+LAYOUT: post
+#+DATE: 2019-07-15
 #+TAGS[]: jekyll org-mode
 
 * 第一个org博客
