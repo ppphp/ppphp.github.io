@@ -1,0 +1,23 @@
+#+TITLE: jack overivew
+#+TAGS[]: audio
+
+jack2是一个音频的库，jack的英文本意是插头，挺形象的。
+
+~cadence~ 和 ~qjackctl~ 可以控制这个东西。
+
+jack2是一个进程吃满整个声卡，所以一般直接跑系统上。
+* 编译
+
+看到 ~waf~ 就知道是一个 ~waf~ 系统构建的项目了。看到现在，c++项目的构建系统还没有一样的。waf是一个python写的构建系统，可以pip install，但是一般项目也会自带，有点像gradlew，还有版本差异的。
+
+所以 ~./waf configure~ ~./waf~ 就完了，会构建到build文件夹下。
+
+jack不是一个二进制为主的功能，所以jackd也没什么好看的。
+
+* 代码
+
+还是很清晰的，基本就是各个系统适配，然后统一输出到dbus。
+
+linux文件夹下获取物理硬件抽象，posix抽象到posix系统，common做统一的算法，毕竟硬件是一样的，最后输出到dbus，等于暴露一个socket。
+
+

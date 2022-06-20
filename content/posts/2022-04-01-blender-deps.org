@@ -1,4 +1,95 @@
 #+TITLE: blender deps
+#+DATE: 2022-04-01
 #+TAGS[]: visual
 
+blender光cmake就2000行，太多了。
 以下收集了一下blender的依赖，都是c++的库。
+
+python相关，都是脚本
+
+fftw3 [[https://www.fftw.org][fftw]],[[https://github.com/FFTW/fftw3.git][github]] 一个c的离散傅立叶变换库 smoke, ocean sim, and audio effects
+
+pugixml xml解析 oiio,svg
+
+bullet 物理引擎
+
+opencolorio 色彩管理
+
+openxr vr标准库
+
+gmp 高精度 精确的布尔值（if else float）
+
+openimagedenoise 图片降噪 一种节点
+
+opensubdiv [[https://graphics.pixar.com/opensubdiv][opensubdiv]], [[https://github.com/PixarAnimationStudios/OpenSubdiv][github]] 皮克斯的解面库
+
+potrace bitmap转矢量图 [[potrace.sourceforge.net][potrace]]
+
+openvdb/nanovdb [[https://www.openvdb.org][openvdb]],[[https://github.com/AcademySoftwareFoundation/openvdb][github]] 学院的稀疏体积计算 + blosc [[https://github.com/Blosc/c-blosc][github]] 压缩
+
+haru [[libharu.org][haru]],[[https://github.com/libharu/libharu][github]] 生成pdf
+
+GHOST/SDL GHOST是blender自己的窗口系统，[[https://libsdl.org][sdl]], [[https://github.com/libsdl-org/SDL/][github]]
+
+QUADRIFLOW 一种四边形化算法
+
+audaspace [[https://github.com/neXyon/audaspace][github]] 音频库
+
+openmp 并行
+
+gles 不解释
+
+freetype 字体库
+
+eigen3 矩阵库
+
+OPENIMAGEIO 图片库
+
+OPENEXR [[https://github.com/AcademySoftwareFoundation/openexr][github]] 光业光魔给学院的动图库
+
+OPENJPEG，LIBTIFF，DDS，CINEON，HDR，WEBP 图片库
+
+AVI，SNDFILE 视频库
+
+FFMPEG 音视频老祖宗
+
+ALEMBIC [[https://www.alembic.io][alembic]]动态场景库
+
+USD 皮克斯的场景格式库
+
+opencollada [[www.opencollada.org][opencollada]] 流式collada格式库
+
+wavefront_obj wavefront格式的.obj格式库
+
+stl .stl格式
+
+GPENCIL （grease pencil的）.svg格式
+
+openal 声音库
+
+jack 音频库
+
+pulseaudio 音频桥接库
+
+wasapi windows的系统音频库
+
+lzo,lzma,draco 压缩
+
+libmv [[https://github.com/libmv/libmv][github]] 动作跟踪
+
+gflags,glog,gtests google工程套件
+
+OSL 对象存储层
+
+embree 英特尔的cpu光线追踪库
+
+cuda，optix nvidia的gpu库
+
+llvm/clang 编译器
+
+jemalloc,VALGRIND,GUARDEDALLOC 内存工程
+
+TBB 多线程
+
+
+
