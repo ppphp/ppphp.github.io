@@ -1,0 +1,9 @@
+#+TITLE: hugo disqus安装
+#+TAGS[]: blog
+
+disqus是一个第三方的评论提供商。主要提供了静态网页的接口，当然也可以只是ajax。
+
+[[https://disqus.io][官网]]上注册一个帐号即可。
+
+[[https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/disqus.html][hugo官方disqus代码]]，复制到一个文件里，作为模板。
+

@@ -5,3 +5,8 @@ title = "a usr/bin"
 theme = "PaperMod"
 # contentDir="org"
 hasCJKLanguage=true
+
+disqusShortname = 'ppphp-1.disqus.io'
+
+[params]
+comments= true
