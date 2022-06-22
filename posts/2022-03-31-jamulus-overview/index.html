@@ -5,7 +5,7 @@
 <meta name=robots content="index, follow">
 <title>jamulus overivew | a usr/bin</title>
 <meta name=keywords content="audio">
-<meta name=description content="jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。">
+<meta name=description content="jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐，jamulus自然是一个以这">
 <meta name=author content>
 <link rel=canonical href=https://ppphp.github.io/posts/2022-03-31-jamulus-overview/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.1740750342264a4e69b84ddf6899fb02cc95465080d85c57c08bb1d110900bf6.css integrity="sha256-F0B1A0ImSk5puE3faJn7AsyVRlCA2FxXwIux0RCQC/Y=" rel="preload stylesheet" as=style>
@@ -21,14 +21,14 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="jamulus overivew">
-<meta property="og:description" content="jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。">
+<meta property="og:description" content="jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐，jamulus自然是一个以这">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ppphp.github.io/posts/2022-03-31-jamulus-overview/"><meta property="article:section" content="posts">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="jamulus overivew">
-<meta name=twitter:description content="jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。">
+<meta name=twitter:description content="jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐，jamulus自然是一个以这">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ppphp.github.io/posts/"},{"@type":"ListItem","position":2,"name":"jamulus overivew","item":"https://ppphp.github.io/posts/2022-03-31-jamulus-overview/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"jamulus overivew","name":"jamulus overivew","description":"jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。","keywords":["audio"],"articleBody":" jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。\n","wordCount":"56","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-03-31-jamulus-overview/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"jamulus overivew","name":"jamulus overivew","description":"jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐，jamulus自然是一个以这","keywords":["audio"],"articleBody":"  jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐，jamulus自然是一个以这个为目的的工具。\n github,官网\n编译  首先看到大大的 Jamulus.pro 就知道，这玩意是个 qmake 项目。\n gentoo明面上是调不到qmake，结果找半天才发现在 /usr/lib64/qt/bin 这个地方\n qmake 然后 make 就完事了\n  运行   ./Jamulus 就行了，会运行一个小小的客户端。\n ./Jamulus -s 会运行服务器。\n 运行依赖于jack系统，所以需要jack服务运行。\n 这客户端太小了，只有有限的几个功能。服务器稍微好点，好不到哪去。\n  代码  整体只有5000行头文件和15000行代码，挺小的，包括了服务器和qt客户端，好像这个没什么复杂的。\n 所有代码都在 src 文件夹里。 libs 里放着两个三方库 opus 和 ~oboe~。\n 这个软件真的就光录音和转发，其他功能特别有限，和c++实现有关。一个文件是一个系统的adapter，基本就是闭着眼睛用，设置也挺少的，而且很傻瓜。\n 音频输入，音频流转发，服务发现，房间系统，界面和多语言。基本就这几样了。\n  ","wordCount":"427","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-03-31-jamulus-overview/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -54,14 +54,61 @@ jamulus overivew
 <div class=post-meta>
 </div>
 </header>
-<div class=post-content><p>
-jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐。</p>
+<div class=post-content>
+<p>
+jamulus是一个实现远程低延迟语音的工具。jam是指几种乐器即兴合奏，可以是表演，也可以是乐手之间自娱自乐，jamulus自然是一个以这个为目的的工具。</p>
+<p>
+<a href=https://github.com/jamulussoftware/jamulus>github</a>,<a href=https://jamulus.io>官网</a></p>
+<div id=outline-container-headline-1 class=outline-2>
+<h2 id=headline-1>
+编译
+</h2>
+<div id=outline-text-headline-1 class=outline-text-2>
+<p>首先看到大大的 <code>Jamulus.pro</code> 就知道，这玩意是个 <code>qmake</code> 项目。</p>
+<p>
+gentoo明面上是调不到qmake，结果找半天才发现在 <code>/usr/lib64/qt/bin</code> 这个地方</p>
+<p>
+<code>qmake</code> 然后 <code>make</code> 就完事了</p>
+</div>
+</div>
+<div id=outline-container-headline-2 class=outline-2>
+<h2 id=headline-2>
+运行
+</h2>
+<div id=outline-text-headline-2 class=outline-text-2>
+<p>
+<code>./Jamulus</code> 就行了，会运行一个小小的客户端。</p>
+<p>
+<code>./Jamulus -s</code> 会运行服务器。</p>
+<p>
+运行依赖于jack系统，所以需要jack服务运行。</p>
+<p>
+这客户端太小了，只有有限的几个功能。服务器稍微好点，好不到哪去。</p>
+</div>
+</div>
+<div id=outline-container-headline-3 class=outline-2>
+<h2 id=headline-3>
+代码
+</h2>
+<div id=outline-text-headline-3 class=outline-text-2>
+<p>整体只有5000行头文件和15000行代码，挺小的，包括了服务器和qt客户端，好像这个没什么复杂的。</p>
+<p>
+所有代码都在 <code>src</code> 文件夹里。 <code>libs</code> 里放着两个三方库 <code>opus</code> 和 ~oboe~。</p>
+<p>
+这个软件真的就光录音和转发，其他功能特别有限，和c++实现有关。一个文件是一个系统的adapter，基本就是闭着眼睛用，设置也挺少的，而且很傻瓜。</p>
+<p>
+音频输入，音频流转发，服务发现，房间系统，界面和多语言。基本就这几样了。</p>
+</div>
+</div>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
 <li><a href=https://ppphp.github.io/tags/audio/>audio</a></li>
 </ul>
-</footer>
+</footer><div id=disqus_thread></div>
+<script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//ppphp-1.disqus.io.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)}()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </article>
 </main>
 <footer class=footer>

@@ -3,9 +3,9 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>godot-overview | a usr/bin</title>
+<title>godot概览 | a usr/bin</title>
 <meta name=keywords content="game,engine">
-<meta name=description content="godot是一个开源的游戏引擎，学习一下他的基本功能。">
+<meta name=description content="godot是一个开源的游戏引擎，刚好他要出4.0了，学习一下他的基本功能。 我不会其他的引擎，但是我就是从源码开始，想看下引擎有什么功能。而且">
 <meta name=author content>
 <link rel=canonical href=https://ppphp.github.io/posts/2022-04-05-godot-overview/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.1740750342264a4e69b84ddf6899fb02cc95465080d85c57c08bb1d110900bf6.css integrity="sha256-F0B1A0ImSk5puE3faJn7AsyVRlCA2FxXwIux0RCQC/Y=" rel="preload stylesheet" as=style>
@@ -20,15 +20,17 @@
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript><meta property="og:title" content="godot-overview">
-<meta property="og:description" content="godot是一个开源的游戏引擎，学习一下他的基本功能。">
+</noscript><meta property="og:title" content="godot概览">
+<meta property="og:description" content="godot是一个开源的游戏引擎，刚好他要出4.0了，学习一下他的基本功能。 我不会其他的引擎，但是我就是从源码开始，想看下引擎有什么功能。而且">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ppphp.github.io/posts/2022-04-05-godot-overview/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-04-05T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-04-05T00:00:00+00:00">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="godot-overview">
-<meta name=twitter:description content="godot是一个开源的游戏引擎，学习一下他的基本功能。">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ppphp.github.io/posts/"},{"@type":"ListItem","position":2,"name":"godot-overview","item":"https://ppphp.github.io/posts/2022-04-05-godot-overview/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"godot-overview","name":"godot-overview","description":"godot是一个开源的游戏引擎，学习一下他的基本功能。","keywords":["game","engine"],"articleBody":" godot是一个开源的游戏引擎，学习一下他的基本功能。\n","wordCount":"27","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-04-05-godot-overview/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
+<meta name=twitter:title content="godot概览">
+<meta name=twitter:description content="godot是一个开源的游戏引擎，刚好他要出4.0了，学习一下他的基本功能。 我不会其他的引擎，但是我就是从源码开始，想看下引擎有什么功能。而且">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ppphp.github.io/posts/"},{"@type":"ListItem","position":2,"name":"godot概览","item":"https://ppphp.github.io/posts/2022-04-05-godot-overview/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"godot概览","name":"godot概览","description":"godot是一个开源的游戏引擎，刚好他要出4.0了，学习一下他的基本功能。 我不会其他的引擎，但是我就是从源码开始，想看下引擎有什么功能。而且","keywords":["game","engine"],"articleBody":"  godot是一个开源的游戏引擎，刚好他要出4.0了，学习一下他的基本功能。\n 我不会其他的引擎，但是我就是从源码开始，想看下引擎有什么功能。而且我相信他会比Unreal和Unity这种简单很多。\n godot官网,godot github，这两个官网。\n构建   这个项目使用了c++编写，这很正常，正常游戏引擎都是c++。\nscons   这是一个使用scons构建的项目。scons类似于make，区别不大，比cmake偏任务管理一点。这是个python编译工具，所以项目里会有一些python脚本。\n SConstruct 是类似 Makefile 的标志性文件，是项目命令的存放处。\n 输入 scons 一键开始编译，然后运行。它不自带安装，所以我们也不安装了。\n 删除产物是 scons -c\n  文件   一个引擎的代码其实是两部分构成的，一部分是编辑器，还有一部分是运行时。特别因为是C++的代码，所以经常需要一个抽象来给这两个不太相同功能的用。\n 编辑器是一个桌面软件，主要是界面的操作。像 vscode 这种是富文本编辑器。游戏编辑器比富文本还要富一点，但是很多通用的功能会少一点。\n 运行时是真的引擎，是游戏运行的多媒体环境。要求性能很高，然后还有一个脚本语言的运行时。\n 所以编辑器是很难做的一个东西。\nthirdparty  他用了一些三方库在 thirdparty 文件夹下，都是拷贝源代码。\n 其中有一些是很基础的，每个发行版会携带的，比如harfbuzz，还有一些是比较前沿的，比如embree。\n  core   包括了C++语言层面的抽象。众所周知，C++不抽象一套对象什么的东西，浑身难受。\n 比如各种池，各种异步，跨编译器抽象，设计模式抽象。\n  driver/platform   这两个是多媒体方面跨平台的功能，分两个文件夹估计因为driver本身是跨平台的。platform更底层一点。\n driver里面就是图片，视频，音乐，渲染这种，编辑器引擎都能用。\n platform是给最后引擎编译生成的二进制的库，都是安卓ios单独的代码什么的。编辑器用不到，如果你也是编译的，可以看到这里没有 .o 产物文件。\n  scene   如其名，是场景的功能\n  modules   最后在编辑器里呈现的功能在modules里面，可以看到里面都是游戏的术语了。\n  editor   编辑器合体。\n  main   编辑器之上的cli功能抽象。\n  server   他甚至还有个server\n    渲染   渲染用了vulkan\n  物理   物理用bullet，我都看到了\n    使用   ./godot 打开引擎，是一个项目列表。因为我没有项目，所以这些项目也不知道存放在哪个文件夹下，应该是某个Desktop缓存吧，因为 .local/share/godot 下面已经有东西了。\n 他还有个模板，可以从官网上下一些模板，不过现在还没有适配4.0的。\n 这里直接新建一个。\n 他宣传自己是一个全节点化的引擎，确实，编辑之前需要选择一个根节点，预设了2D,3D,ui节点。确实，开发的时候就2d3d，要上线都是ui。\n 左下是资源，非常熟悉了。\n 左上角场景也在很明显的地方。\n 它和其他引擎一样用的是自己的脚本语言， GDScript 。这个语言有点像Python，反正是个不太行，但是很正宗的脚本语言。\n 他的脚本也是附着在东西（Actor/Sprite）上的，就还行。\n 然后我不会了，动手做游戏太难了。有缘再见。\n  ","wordCount":"1219","inLanguage":"en","datePublished":"2022-04-05T00:00:00Z","dateModified":"2022-04-05T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-04-05-godot-overview/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -49,20 +51,189 @@
 <article class=post-single>
 <header class=post-header>
 <h1 class=post-title>
-godot-overview
+godot概览
 </h1>
-<div class=post-meta>
+<div class=post-meta><span title="2022-04-05 00:00:00 +0000 UTC">April 5, 2022</span>
 </div>
 </header>
-<div class=post-content><p>
-godot是一个开源的游戏引擎，学习一下他的基本功能。</p>
+<div class=post-content>
+<p>
+godot是一个开源的游戏引擎，刚好他要出4.0了，学习一下他的基本功能。</p>
+<p>
+我不会其他的引擎，但是我就是从源码开始，想看下引擎有什么功能。而且我相信他会比Unreal和Unity这种简单很多。</p>
+<p>
+<a href=https://godotengine.org>godot官网</a>,<a href=https://github.com/godotengine/godot>godot github</a>，这两个官网。</p>
+<div id=outline-container-headline-1 class=outline-2>
+<h2 id=headline-1>
+构建
+</h2>
+<div id=outline-text-headline-1 class=outline-text-2>
+<p>
+这个项目使用了c++编写，这很正常，正常游戏引擎都是c++。</p>
+<div id=outline-container-headline-2 class=outline-3>
+<h3 id=headline-2>
+scons
+</h3>
+<div id=outline-text-headline-2 class=outline-text-3>
+<p>
+这是一个使用scons构建的项目。scons类似于make，区别不大，比cmake偏任务管理一点。这是个python编译工具，所以项目里会有一些python脚本。</p>
+<p>
+<code>SConstruct</code> 是类似 <code>Makefile</code> 的标志性文件，是项目命令的存放处。</p>
+<p>
+输入 <code>scons</code> 一键开始编译，然后运行。它不自带安装，所以我们也不安装了。</p>
+<p>
+删除产物是 <code>scons -c</code></p>
+</div>
+</div>
+<div id=outline-container-headline-3 class=outline-3>
+<h3 id=headline-3>
+文件
+</h3>
+<div id=outline-text-headline-3 class=outline-text-3>
+<p>
+一个引擎的代码其实是两部分构成的，一部分是编辑器，还有一部分是运行时。特别因为是C++的代码，所以经常需要一个抽象来给这两个不太相同功能的用。</p>
+<p>
+编辑器是一个桌面软件，主要是界面的操作。像 <code>vscode</code> 这种是富文本编辑器。游戏编辑器比富文本还要富一点，但是很多通用的功能会少一点。</p>
+<p>
+运行时是真的引擎，是游戏运行的多媒体环境。要求性能很高，然后还有一个脚本语言的运行时。</p>
+<p>
+所以编辑器是很难做的一个东西。</p>
+<div id=outline-container-headline-4 class=outline-4>
+<h4 id=headline-4>
+thirdparty
+</h4>
+<div id=outline-text-headline-4 class=outline-text-4>
+<p>他用了一些三方库在 <code>thirdparty</code> 文件夹下，都是拷贝源代码。</p>
+<p>
+其中有一些是很基础的，每个发行版会携带的，比如harfbuzz，还有一些是比较前沿的，比如embree。</p>
+</div>
+</div>
+<div id=outline-container-headline-5 class=outline-4>
+<h4 id=headline-5>
+core
+</h4>
+<div id=outline-text-headline-5 class=outline-text-4>
+<p>
+包括了C++语言层面的抽象。众所周知，C++不抽象一套对象什么的东西，浑身难受。</p>
+<p>
+比如各种池，各种异步，跨编译器抽象，设计模式抽象。</p>
+</div>
+</div>
+<div id=outline-container-headline-6 class=outline-4>
+<h4 id=headline-6>
+driver/platform
+</h4>
+<div id=outline-text-headline-6 class=outline-text-4>
+<p>
+这两个是多媒体方面跨平台的功能，分两个文件夹估计因为driver本身是跨平台的。platform更底层一点。</p>
+<p>
+driver里面就是图片，视频，音乐，渲染这种，编辑器引擎都能用。</p>
+<p>
+platform是给最后引擎编译生成的二进制的库，都是安卓ios单独的代码什么的。编辑器用不到，如果你也是编译的，可以看到这里没有 <code>.o</code> 产物文件。</p>
+</div>
+</div>
+<div id=outline-container-headline-7 class=outline-4>
+<h4 id=headline-7>
+scene
+</h4>
+<div id=outline-text-headline-7 class=outline-text-4>
+<p>
+如其名，是场景的功能</p>
+</div>
+</div>
+<div id=outline-container-headline-8 class=outline-4>
+<h4 id=headline-8>
+modules
+</h4>
+<div id=outline-text-headline-8 class=outline-text-4>
+<p>
+最后在编辑器里呈现的功能在modules里面，可以看到里面都是游戏的术语了。</p>
+</div>
+</div>
+<div id=outline-container-headline-9 class=outline-4>
+<h4 id=headline-9>
+editor
+</h4>
+<div id=outline-text-headline-9 class=outline-text-4>
+<p>
+编辑器合体。</p>
+</div>
+</div>
+<div id=outline-container-headline-10 class=outline-4>
+<h4 id=headline-10>
+main
+</h4>
+<div id=outline-text-headline-10 class=outline-text-4>
+<p>
+编辑器之上的cli功能抽象。</p>
+</div>
+</div>
+<div id=outline-container-headline-11 class=outline-4>
+<h4 id=headline-11>
+server
+</h4>
+<div id=outline-text-headline-11 class=outline-text-4>
+<p>
+他甚至还有个server</p>
+</div>
+</div>
+</div>
+</div>
+<div id=outline-container-headline-12 class=outline-3>
+<h3 id=headline-12>
+渲染
+</h3>
+<div id=outline-text-headline-12 class=outline-text-3>
+<p>
+渲染用了vulkan</p>
+</div>
+</div>
+<div id=outline-container-headline-13 class=outline-3>
+<h3 id=headline-13>
+物理
+</h3>
+<div id=outline-text-headline-13 class=outline-text-3>
+<p>
+物理用bullet，我都看到了</p>
+</div>
+</div>
+</div>
+</div>
+<div id=outline-container-headline-14 class=outline-2>
+<h2 id=headline-14>
+使用
+</h2>
+<div id=outline-text-headline-14 class=outline-text-2>
+<p>
+<code>./godot</code> 打开引擎，是一个项目列表。因为我没有项目，所以这些项目也不知道存放在哪个文件夹下，应该是某个Desktop缓存吧，因为 <code>.local/share/godot</code> 下面已经有东西了。</p>
+<p>
+他还有个模板，可以从官网上下一些模板，不过现在还没有适配4.0的。</p>
+<p>
+这里直接新建一个。</p>
+<p>
+他宣传自己是一个全节点化的引擎，确实，编辑之前需要选择一个根节点，预设了2D,3D,ui节点。确实，开发的时候就2d3d，要上线都是ui。</p>
+<p>
+左下是资源，非常熟悉了。</p>
+<p>
+左上角场景也在很明显的地方。</p>
+<p>
+它和其他引擎一样用的是自己的脚本语言， <code>GDScript</code> 。这个语言有点像Python，反正是个不太行，但是很正宗的脚本语言。</p>
+<p>
+他的脚本也是附着在东西（Actor/Sprite）上的，就还行。</p>
+<p>
+然后我不会了，动手做游戏太难了。有缘再见。</p>
+</div>
+</div>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
 <li><a href=https://ppphp.github.io/tags/game/>game</a></li>
 <li><a href=https://ppphp.github.io/tags/engine/>engine</a></li>
 </ul>
-</footer>
+</footer><div id=disqus_thread></div>
+<script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//ppphp-1.disqus.io.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)}()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </article>
 </main>
 <footer class=footer>

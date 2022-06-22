@@ -5,7 +5,7 @@
 <meta name=robots content="index, follow">
 <title>blender deps | a usr/bin</title>
 <meta name=keywords content="visual">
-<meta name=description content="以下收集了一下blender的依赖，都是c++的库。">
+<meta name=description content="blender光cmake就2000行，太多了。 以下收集了一下blender的依赖，都是c++的库。 python相关，都是脚本 fftw3 fftw,github 一个c的离">
 <meta name=author content>
 <link rel=canonical href=https://ppphp.github.io/posts/2022-04-01-blender-deps/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.1740750342264a4e69b84ddf6899fb02cc95465080d85c57c08bb1d110900bf6.css integrity="sha256-F0B1A0ImSk5puE3faJn7AsyVRlCA2FxXwIux0RCQC/Y=" rel="preload stylesheet" as=style>
@@ -21,14 +21,16 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="blender deps">
-<meta property="og:description" content="以下收集了一下blender的依赖，都是c++的库。">
+<meta property="og:description" content="blender光cmake就2000行，太多了。 以下收集了一下blender的依赖，都是c++的库。 python相关，都是脚本 fftw3 fftw,github 一个c的离">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ppphp.github.io/posts/2022-04-01-blender-deps/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-04-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-04-01T00:00:00+00:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="blender deps">
-<meta name=twitter:description content="以下收集了一下blender的依赖，都是c++的库。">
+<meta name=twitter:description content="blender光cmake就2000行，太多了。 以下收集了一下blender的依赖，都是c++的库。 python相关，都是脚本 fftw3 fftw,github 一个c的离">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ppphp.github.io/posts/"},{"@type":"ListItem","position":2,"name":"blender deps","item":"https://ppphp.github.io/posts/2022-04-01-blender-deps/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"blender deps","name":"blender deps","description":"以下收集了一下blender的依赖，都是c++的库。","keywords":["visual"],"articleBody":" 以下收集了一下blender的依赖，都是c++的库。\n","wordCount":"26","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-04-01-blender-deps/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"blender deps","name":"blender deps","description":"blender光cmake就2000行，太多了。 以下收集了一下blender的依赖，都是c++的库。 python相关，都是脚本 fftw3 fftw,github 一个c的离","keywords":["visual"],"articleBody":" blender光cmake就2000行，太多了。 以下收集了一下blender的依赖，都是c++的库。\n python相关，都是脚本\n fftw3 fftw,github 一个c的离散傅立叶变换库 smoke, ocean sim, and audio effects\n pugixml xml解析 oiio,svg\n bullet 物理引擎\n opencolorio 色彩管理\n openxr vr标准库\n gmp 高精度 精确的布尔值（if else float）\n openimagedenoise 图片降噪 一种节点\n opensubdiv opensubdiv, github 皮克斯的解面库\n potrace bitmap转矢量图 potrace\n openvdb/nanovdb openvdb,github 学院的稀疏体积计算 + blosc github 压缩\n haru haru,github 生成pdf\n GHOST/SDL GHOST是blender自己的窗口系统，sdl, github\n QUADRIFLOW 一种四边形化算法\n audaspace github 音频库\n openmp 并行\n gles 不解释\n freetype 字体库\n eigen3 矩阵库\n OPENIMAGEIO 图片库\n OPENEXR github 光业光魔给学院的动图库\n OPENJPEG，LIBTIFF，DDS，CINEON，HDR，WEBP 图片库\n AVI，SNDFILE 视频库\n FFMPEG 音视频老祖宗\n ALEMBIC alembic动态场景库\n USD 皮克斯的场景格式库\n opencollada opencollada 流式collada格式库\n wavefront_obj wavefront格式的.obj格式库\n stl .stl格式\n GPENCIL （grease pencil的）.svg格式\n openal 声音库\n jack 音频库\n pulseaudio 音频桥接库\n wasapi windows的系统音频库\n lzo,lzma,draco 压缩\n libmv github 动作跟踪\n gflags,glog,gtests google工程套件\n OSL 对象存储层\n embree 英特尔的cpu光线追踪库\n cuda，optix nvidia的gpu库\n llvm/clang 编译器\n jemalloc,VALGRIND,GUARDEDALLOC 内存工程\n TBB 多线程\n","wordCount":"500","inLanguage":"en","datePublished":"2022-04-01T00:00:00Z","dateModified":"2022-04-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-04-01-blender-deps/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -51,17 +53,107 @@
 <h1 class=post-title>
 blender deps
 </h1>
-<div class=post-meta>
+<div class=post-meta><span title="2022-04-01 00:00:00 +0000 UTC">April 1, 2022</span>
 </div>
 </header>
 <div class=post-content><p>
+blender光cmake就2000行，太多了。
 以下收集了一下blender的依赖，都是c++的库。</p>
+<p>
+python相关，都是脚本</p>
+<p>
+fftw3 <a href=https://www.fftw.org>fftw</a>,<a href=https://github.com/FFTW/fftw3.git>github</a> 一个c的离散傅立叶变换库 smoke, ocean sim, and audio effects</p>
+<p>
+pugixml xml解析 oiio,svg</p>
+<p>
+bullet 物理引擎</p>
+<p>
+opencolorio 色彩管理</p>
+<p>
+openxr vr标准库</p>
+<p>
+gmp 高精度 精确的布尔值（if else float）</p>
+<p>
+openimagedenoise 图片降噪 一种节点</p>
+<p>
+opensubdiv <a href=https://graphics.pixar.com/opensubdiv>opensubdiv</a>, <a href=https://github.com/PixarAnimationStudios/OpenSubdiv>github</a> 皮克斯的解面库</p>
+<p>
+potrace bitmap转矢量图 <a href=potrace.sourceforge.net>potrace</a></p>
+<p>
+openvdb/nanovdb <a href=https://www.openvdb.org>openvdb</a>,<a href=https://github.com/AcademySoftwareFoundation/openvdb>github</a> 学院的稀疏体积计算 + blosc <a href=https://github.com/Blosc/c-blosc>github</a> 压缩</p>
+<p>
+haru <a href=libharu.html>haru</a>,<a href=https://github.com/libharu/libharu>github</a> 生成pdf</p>
+<p>
+GHOST/SDL GHOST是blender自己的窗口系统，<a href=https://libsdl.org>sdl</a>, <a href=https://github.com/libsdl-org/SDL/>github</a></p>
+<p>
+QUADRIFLOW 一种四边形化算法</p>
+<p>
+audaspace <a href=https://github.com/neXyon/audaspace>github</a> 音频库</p>
+<p>
+openmp 并行</p>
+<p>
+gles 不解释</p>
+<p>
+freetype 字体库</p>
+<p>
+eigen3 矩阵库</p>
+<p>
+OPENIMAGEIO 图片库</p>
+<p>
+OPENEXR <a href=https://github.com/AcademySoftwareFoundation/openexr>github</a> 光业光魔给学院的动图库</p>
+<p>
+OPENJPEG，LIBTIFF，DDS，CINEON，HDR，WEBP 图片库</p>
+<p>
+AVI，SNDFILE 视频库</p>
+<p>
+FFMPEG 音视频老祖宗</p>
+<p>
+ALEMBIC <a href=https://www.alembic.io>alembic</a>动态场景库</p>
+<p>
+USD 皮克斯的场景格式库</p>
+<p>
+opencollada <a href=www.opencollada.html>opencollada</a> 流式collada格式库</p>
+<p>
+wavefront_obj wavefront格式的.obj格式库</p>
+<p>
+stl .stl格式</p>
+<p>
+GPENCIL （grease pencil的）.svg格式</p>
+<p>
+openal 声音库</p>
+<p>
+jack 音频库</p>
+<p>
+pulseaudio 音频桥接库</p>
+<p>
+wasapi windows的系统音频库</p>
+<p>
+lzo,lzma,draco 压缩</p>
+<p>
+libmv <a href=https://github.com/libmv/libmv>github</a> 动作跟踪</p>
+<p>
+gflags,glog,gtests google工程套件</p>
+<p>
+OSL 对象存储层</p>
+<p>
+embree 英特尔的cpu光线追踪库</p>
+<p>
+cuda，optix nvidia的gpu库</p>
+<p>
+llvm/clang 编译器</p>
+<p>
+jemalloc,VALGRIND,GUARDEDALLOC 内存工程</p>
+<p>
+TBB 多线程</p>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
 <li><a href=https://ppphp.github.io/tags/visual/>visual</a></li>
 </ul>
-</footer>
+</footer><div id=disqus_thread></div>
+<script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//ppphp-1.disqus.io.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)}()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </article>
 </main>
 <footer class=footer>
