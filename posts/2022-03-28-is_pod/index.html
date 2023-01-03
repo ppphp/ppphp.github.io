@@ -5,7 +5,7 @@
 <meta name=robots content="index, follow">
 <title>c++ pod类型 | a usr/bin</title>
 <meta name=keywords content="c++">
-<meta name=description content="c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一点规矩。">
+<meta name=description content="从模板元编程上看，c++的标准库的is_pod在2020已经废弃了，但是这个功能还可以说下。 cpp reference: is_pod pod pod是plain old data的缩写，概念">
 <meta name=author content>
 <link rel=canonical href=https://ppphp.github.io/posts/2022-03-28-is_pod/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.1740750342264a4e69b84ddf6899fb02cc95465080d85c57c08bb1d110900bf6.css integrity="sha256-F0B1A0ImSk5puE3faJn7AsyVRlCA2FxXwIux0RCQC/Y=" rel="preload stylesheet" as=style>
@@ -21,14 +21,14 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="c++ pod类型">
-<meta property="og:description" content="c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一点规矩。">
+<meta property="og:description" content="从模板元编程上看，c++的标准库的is_pod在2020已经废弃了，但是这个功能还可以说下。 cpp reference: is_pod pod pod是plain old data的缩写，概念">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ppphp.github.io/posts/2022-03-28-is_pod/"><meta property="article:section" content="posts">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="c++ pod类型">
-<meta name=twitter:description content="c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一点规矩。">
+<meta name=twitter:description content="从模板元编程上看，c++的标准库的is_pod在2020已经废弃了，但是这个功能还可以说下。 cpp reference: is_pod pod pod是plain old data的缩写，概念">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ppphp.github.io/posts/"},{"@type":"ListItem","position":2,"name":"c++ pod类型","item":"https://ppphp.github.io/posts/2022-03-28-is_pod/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"c++ pod类型","name":"c\u002b\u002b pod类型","description":"c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一点规矩。","keywords":["c++"],"articleBody":" c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一点规矩。\n","wordCount":"36","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-03-28-is_pod/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"c++ pod类型","name":"c\u002b\u002b pod类型","description":"从模板元编程上看，c++的标准库的is_pod在2020已经废弃了，但是这个功能还可以说下。 cpp reference: is_pod pod pod是plain old data的缩写，概念","keywords":["c++"],"articleBody":"  从模板元编程上看，c++的标准库的is_pod在2020已经废弃了，但是这个功能还可以说下。\n cpp reference: is_pod\npod   pod是plain old data的缩写，概念上讲，pod是一个类似于struct的东西，就是只有数据，没有花里胡哨的。花里胡哨很难定义，但是写代码的大概知道什么意思，主要就是一个等于号可以正常复制。\n c++的数据结构非常复杂，所以pod的定义也要长一点。\n c++的pod由两部分组成，标准布局和平凡性。听起来好像都差不多，当然程序取名肯定是有不一样的。\n std::is_pod = std::is_standard_layout \u0026\u0026 std::is_trival\n  标准布局   有个模板元编程的函数 std::is_standard_layout 可以判断是否标准布局。\n 标准布局是继承链里只有一个父类有非静态成员变量。就是说可以继承很多类似于namespace的类，但是只能集成一个正常的类。\n 好处是内存兼容性好，c++的特色，不得不品尝。\n  trivial  这个词很难翻译，可以叫显然，但是实际含义和显然没啥关系。\n 含义是类的构造器是默认的，没有被删除。这个有点显然，但是听到显然好像想不到是这么回事。\n 大概就是能像struct一样初始化。\n  ","wordCount":"427","inLanguage":"en","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-03-28-is_pod/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -54,8 +54,51 @@ c++ pod类型
 <div class=post-meta>
 </div>
 </header>
-<div class=post-content><p>
-c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一点规矩。</p>
+<div class=post-content>
+<p>
+从模板元编程上看，c++的标准库的is_pod在2020已经废弃了，但是这个功能还可以说下。</p>
+<p>
+<a href=https://en.cppreference.com/w/cpp/types/is_pod>cpp reference: is_pod</a></p>
+<div id=outline-container-headline-1 class=outline-2>
+<h2 id=headline-1>
+pod
+</h2>
+<div id=outline-text-headline-1 class=outline-text-2>
+<p>
+pod是plain old data的缩写，概念上讲，pod是一个类似于struct的东西，就是只有数据，没有花里胡哨的。花里胡哨很难定义，但是写代码的大概知道什么意思，主要就是一个等于号可以正常复制。</p>
+<p>
+c++的数据结构非常复杂，所以pod的定义也要长一点。</p>
+<p>
+c++的pod由两部分组成，标准布局和平凡性。听起来好像都差不多，当然程序取名肯定是有不一样的。</p>
+<p>
+<code>std::is_pod&lt;A> = std::is_standard_layout&lt;A> && std::is_trival&lt;A></code></p>
+</div>
+</div>
+<div id=outline-container-headline-2 class=outline-2>
+<h2 id=headline-2>
+标准布局
+</h2>
+<div id=outline-text-headline-2 class=outline-text-2>
+<p>
+有个模板元编程的函数 <code>std::is_standard_layout</code> 可以判断是否标准布局。</p>
+<p>
+标准布局是继承链里只有一个父类有非静态成员变量。就是说可以继承很多类似于namespace的类，但是只能集成一个正常的类。</p>
+<p>
+好处是内存兼容性好，c++的特色，不得不品尝。</p>
+</div>
+</div>
+<div id=outline-container-headline-3 class=outline-2>
+<h2 id=headline-3>
+trivial
+</h2>
+<div id=outline-text-headline-3 class=outline-text-2>
+<p>这个词很难翻译，可以叫显然，但是实际含义和显然没啥关系。</p>
+<p>
+含义是类的构造器是默认的，没有被删除。这个有点显然，但是听到显然好像想不到是这么回事。</p>
+<p>
+大概就是能像struct一样初始化。</p>
+</div>
+</div>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
@@ -68,7 +111,7 @@ c++比其他语言复杂一点，所以c++的pod类型也比别的语言多一�
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2022 <a href=https://ppphp.github.io/>a usr/bin</a></span>
+<span>&copy; 2023 <a href=https://ppphp.github.io/>a usr/bin</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

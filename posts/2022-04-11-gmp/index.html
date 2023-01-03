@@ -1,0 +1,149 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>golang gmp | a usr/bin</title>
+<meta name=keywords content="go">
+<meta name=description content="golang的gmp面试一定面到，学到就是赚到。 基本概念 gmp名称很简单，goroutine是虚拟线程,machine是机器线程,proce">
+<meta name=author content>
+<link rel=canonical href=https://ppphp.github.io/posts/2022-04-11-gmp/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.1740750342264a4e69b84ddf6899fb02cc95465080d85c57c08bb1d110900bf6.css integrity="sha256-F0B1A0ImSk5puE3faJn7AsyVRlCA2FxXwIux0RCQC/Y=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://ppphp.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://ppphp.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://ppphp.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://ppphp.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://ppphp.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="golang gmp">
+<meta property="og:description" content="golang的gmp面试一定面到，学到就是赚到。 基本概念 gmp名称很简单，goroutine是虚拟线程,machine是机器线程,proce">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ppphp.github.io/posts/2022-04-11-gmp/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-04-11T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-04-11T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="golang gmp">
+<meta name=twitter:description content="golang的gmp面试一定面到，学到就是赚到。 基本概念 gmp名称很简单，goroutine是虚拟线程,machine是机器线程,proce">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ppphp.github.io/posts/"},{"@type":"ListItem","position":2,"name":"golang gmp","item":"https://ppphp.github.io/posts/2022-04-11-gmp/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"golang gmp","name":"golang gmp","description":"golang的gmp面试一定面到，学到就是赚到。 基本概念 gmp名称很简单，goroutine是虚拟线程,machine是机器线程,proce","keywords":["go"],"articleBody":"  golang的gmp面试一定面到，学到就是赚到。\n基本概念   gmp名称很简单，goroutine是虚拟线程,machine是机器线程,processor是进程处理器。\n goroutine其实就是嗷嗷待哺的task。processor分配，如何machine执行。\n m到p是m:n的高端操作。\n m其实会挂起，所以p才等于机器核数。\n  调度   一般跑队列都是那种汉堡王排队，排一个先进先出的队列，然后窗口空了，去点菜。\n 但是如果任务跑的够快，这样用户走过去就很慢，会一直跑锁。\n 所以调度器结合了麦当劳排队和漫展排队，一个processor维护了一个一批进队列，处理完了再进。\n 进队列可以从外面的锁进满，也可以从别的队列进它的一半的任务。\n 一个任务最多10ms，就切换，比较科学。\n gmp组合系统调用的时候，gm和p会分家，p会找下一个m跑g，挂起的gm会在调用完成之后，g回到执行队列，m变成空闲，等着别的m阻塞了再出山。\n 运行的m小于p的时候，其他p-m个线程如果存在，就会自旋，到处找g跑，剩下的闲着就闲着了，反正就那么多p，努力也没用。\n  阻塞   I/O，select block on syscall channel 等待锁 runtime.Gosched()\n  生命周期   M0是第一个M，总得有个干活的。\n G0是M上的第一个G，负责调度。\n 一个程序，会先初始化M0，然后是它的G0，然后初始化P，直接跑M0G0，然后是main\n  ","wordCount":"553","inLanguage":"en","datePublished":"2022-04-11T00:00:00Z","dateModified":"2022-04-11T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://ppphp.github.io/posts/2022-04-11-gmp/"},"publisher":{"@type":"Organization","name":"a usr/bin","logo":{"@type":"ImageObject","url":"https://ppphp.github.io/favicon.ico"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://ppphp.github.io/ accesskey=h title="a usr/bin (Alt + H)">a usr/bin</a>
+<div class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</div>
+</div>
+<ul id=menu>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<h1 class=post-title>
+golang gmp
+</h1>
+<div class=post-meta><span title="2022-04-11 00:00:00 +0000 UTC">April 11, 2022</span>
+</div>
+</header>
+<div class=post-content>
+<p>
+golang的gmp面试一定面到，学到就是赚到。</p>
+<div id=outline-container-headline-1 class=outline-2>
+<h2 id=headline-1>
+基本概念
+</h2>
+<div id=outline-text-headline-1 class=outline-text-2>
+<p>
+gmp名称很简单，goroutine是虚拟线程,machine是机器线程,processor是进程处理器。</p>
+<p>
+goroutine其实就是嗷嗷待哺的task。processor分配，如何machine执行。</p>
+<p>
+m到p是m:n的高端操作。</p>
+<p>
+m其实会挂起，所以p才等于机器核数。</p>
+</div>
+</div>
+<div id=outline-container-headline-2 class=outline-2>
+<h2 id=headline-2>
+调度
+</h2>
+<div id=outline-text-headline-2 class=outline-text-2>
+<p>
+一般跑队列都是那种汉堡王排队，排一个先进先出的队列，然后窗口空了，去点菜。</p>
+<p>
+但是如果任务跑的够快，这样用户走过去就很慢，会一直跑锁。</p>
+<p>
+所以调度器结合了麦当劳排队和漫展排队，一个processor维护了一个一批进队列，处理完了再进。</p>
+<p>
+进队列可以从外面的锁进满，也可以从别的队列进它的一半的任务。</p>
+<p>
+一个任务最多10ms，就切换，比较科学。</p>
+<p>
+gmp组合系统调用的时候，gm和p会分家，p会找下一个m跑g，挂起的gm会在调用完成之后，g回到执行队列，m变成空闲，等着别的m阻塞了再出山。</p>
+<p>
+运行的m小于p的时候，其他p-m个线程如果存在，就会自旋，到处找g跑，剩下的闲着就闲着了，反正就那么多p，努力也没用。</p>
+</div>
+</div>
+<div id=outline-container-headline-3 class=outline-2>
+<h2 id=headline-3>
+阻塞
+</h2>
+<div id=outline-text-headline-3 class=outline-text-2>
+<p>
+I/O，select
+block on syscall
+channel
+等待锁
+runtime.Gosched()</p>
+</div>
+</div>
+<div id=outline-container-headline-4 class=outline-2>
+<h2 id=headline-4>
+生命周期
+</h2>
+<div id=outline-text-headline-4 class=outline-text-2>
+<p>
+M0是第一个M，总得有个干活的。</p>
+<p>
+G0是M上的第一个G，负责调度。</p>
+<p>
+一个程序，会先初始化M0，然后是它的G0，然后初始化P，直接跑M0G0，然后是main</p>
+</div>
+</div>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://ppphp.github.io/tags/go/>go</a></li>
+</ul>
+</footer><div id=disqus_thread></div>
+<script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//ppphp-1.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)}()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2023 <a href=https://ppphp.github.io/>a usr/bin</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>
