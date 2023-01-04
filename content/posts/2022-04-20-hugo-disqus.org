@@ -7,3 +7,4 @@ disqus是一个第三方的评论提供商。主要提供了静态网页的接�
 
 [[https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/disqus.html][hugo官方disqus代码]]，复制到一个文件里，作为模板。
 
+[[https://gohugo.io/content-management/comments/][hugo官方配置教程]]

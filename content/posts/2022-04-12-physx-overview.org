@@ -1,0 +1,12 @@
+#+TITLE: physx overview
+#+TAGS[]: physical engine
+
+physx非常搞笑，一会开源一会闭源的，[[https://github.com/NVIDIAGameWorks/PhysX][github]]上最新的是他的4.1版本。
+
+进入physx文件夹开始编译，输入 ~sh generate_projexts.sh~，虽然编译不了，但是挺无语的。
+
+kaplademo是一个demo，反正编不了
+
+竟然还有 ~source/physx/src/~ 这种文件夹，和bullet3可以说是卧龙凤雏了。
+
+看了一圈也是一堆算法，差不多得了。

@@ -1,0 +1,33 @@
+#+TITLE: lua overview
+#+DATE: 2022-05-03
+#+TAGS[]: lua
+* lua简介
+
+[[https://www.lua.org][官网]] [[https://github.com/lua/lua][github]] lua是一门游戏常用的的快速的解释性语言。
+** 可嵌入式
+
+lua的源码很短，2w行c源码就是全部了。lua的虚拟机本身就不是很直接，留了很多函数指针的参数，可以重写原生接口。
+** 快速
+
+lua的性能非常好，比java稍慢。luajit是最早最经典的jit，可以和原生的c++媲美了。
+
+主要原因还是lua实现简单。
+** 解释性语言
+
+lua类型系统非常简单，而且是动态类型，非常的解释性，也有点恶心。
+
+lua的垃圾回收会在每一句之后执行，对于性能优化也非常恶心。
+* lua架构和源码
+
+[[https://www.reddit.com/comments/63hth/ask_reddit_which_oss_codebases_out_there_are_so/c02pxbp][这篇redis]]讲的比较好
+
+按照
+1. lmathlib,lstrlib 找找感觉
+2. lapi,lobject,lstate 其实是类型系统，比较核心的
+3. lopcodes,lvm,ldo 细节实现，机器层了
+4. lstring,ltable,ltm 复杂的类型系统
+5. lapi 重温核心
+6. ldebug,lparser,lgc 周边系统
+的顺序读一遍源码。
+
+lua直接看源码就差不多了，不用特别看别的书。

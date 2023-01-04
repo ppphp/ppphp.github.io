@@ -1,0 +1,42 @@
+#+TITLE: flutter总览
+#+TAGS[]: desktop
+
+flutter是google的一个跨平台代码库。包含了绘制引擎，组件化的框架设计，material风格的组件库。
+* 安装
+
+flutter使用git clone+环境变量安装，简直是好到不能再好了，更新的时候也是直接更新git，非常方便。
+
+* 绘制引擎
+
+使用2d引擎skia绘制，以后会换成新的或是什么的。
+
+skia是chromium用到的2d引擎，所以理论上能跑chromium的地方都能跑flutter，搭了网页的便车，基本就是个小号electron了。
+
+* 组件化的框架设计
+
+flutter基本就是照抄了react的大部分的组件设计，不过不包括react hook。
+
+flutter有两种组件，有状态和无状态组件。
+
+无状态组件是一个函数，没什么好说的。
+
+有状态组件是对象，分了view和state两部分，主要逻辑都在state里面。
+
+state甚至有声明周期，有create,init,didChange,build,didUpdate,setState,deactivate,dispose这种，和react完全一致，写法也一致。
+
+比较拉的，只写build。好一点就写init，然后是其他的。
+
+* 组件库
+
+一般的外观风格都是material的组件库。主要是import material。
+
+还有一些cupertino风格的组件库，也就是苹果风格的组件。
+
+总之都非常的好用。
+
+
+
+
+
+
+

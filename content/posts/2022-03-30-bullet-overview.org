@@ -5,3 +5,20 @@ bullet3最近有一个小更新，不妨从此了解以下bullet3作为一个物
 
 我以前也不知道什么是物理引擎，今天学习一下。
 
+bullet3不是一个很复杂的引擎，但是被像blender，gta这样的软件使用。
+
+[[https://pybullet.org/wordpress/][官网]]，[[https://github.com/bulletphysics/bullet3][github]]
+
+一般一个计算机界的引擎是由一堆算法和一个编辑器组成的， bullet3也不例外。
+* 构建
+
+这是个cmake项目， ~cmake -S . -B build && make -C build~ 就行。我编译cmake项目是越来越熟练了。
+
+报错需要opengl，我跑不起来。。。hello world能跑，就是看不懂。
+
+应该就是一些类库的合集吧。
+* 代码结构
+
+所有代码都在 ~src~ 文件夹下，文件夹名称也是又臭又长的驼峰。
+
+主要是一些算法的分类，和numpy这种也差不多，没有固定的教程。

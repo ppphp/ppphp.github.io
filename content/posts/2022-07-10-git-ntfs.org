@@ -1,0 +1,7 @@
+#+TITLE: git ntfs error
+#+TAGS[]: thoughts
+
+有的时候会报错不能readonly，需要修复一下磁盘，我是报错windows休眠中，所以运行 ~sudo ntfs-3g -o remove_hiberfile /dev/sdb1 /win~
+
+有的时候会有权限不一样，导致全部飘红 ~git config core.filemode false~
+

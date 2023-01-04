@@ -6,7 +6,7 @@ theme = "PaperMod"
 # contentDir="org"
 hasCJKLanguage=true
 
-disqusShortname = 'ppphp-1'
+DisqusShortname = 'ppphp-1'
 
 [params]
 comments= true
