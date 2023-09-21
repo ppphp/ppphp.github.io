@@ -1,4 +1,5 @@
 #+TITLE: Hugo Update
+#+LAYOUT: post
 #+DATE: 2023-09-22
 #+TAGS[]: hugo
 * hugo安装

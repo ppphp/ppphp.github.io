@@ -2,7 +2,6 @@ baseURL: 'https://ppphp.github.io/'
 languageCode: 'zh-cn'
 title: "a usr/bin"
 
-# contentDir="org"
 hasCJKLanguage: true
 
 DisqusShortname: 'ppphp-1'
@@ -13,4 +12,3 @@ params:
 module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
-
