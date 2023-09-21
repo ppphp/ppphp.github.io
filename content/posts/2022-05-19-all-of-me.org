@@ -1,0 +1,17 @@
+#+TITLE: all of me
+#+TAGS[]: analysis
+
+这个也是jazz
+
+Cmaj7||E7||
+A7b9||Dm11||
+E7||Am11||
+D13||Dm7|G7|
+Cmaj7||E7||
+A7b9||Dm11||
+F6|Fm6|Cmaj7 Em7|A9|
+D7|G13|Cmaj7|Dm7 G7|
+
+调外的次属和弦可以用和声小调
+
+Fm6和弦可以用旋律小调

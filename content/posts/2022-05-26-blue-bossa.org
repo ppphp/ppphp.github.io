@@ -1,0 +1,16 @@
+#+TITLE: blue bossa
+#+TAGS[]: analysis
+
+虽然名字是bossa，但是还是jazz
+
+Am7| ,A7b9|Dm7||
+Bm7b5|E7b9|Am7||
+Cm7|F7|Bbmaj7||
+Bm7b5|E7b9|Am7|E7b9|
+
+反正是个小调，第三行转到Bb大调，等于对应的C大调降了全音
+
+调外的3还是可以用和声小调
+
+11442311，251，2315
+

@@ -1,0 +1,23 @@
+#+TITLE: autumn leaves
+#+TAGS[]: analysis
+
+这个也是jazz
+
+Am7|D7|Gmaj7|Cmaj7|
+F#m7b5|B7|Em7||
+Am7|D7|Gmaj7|Cmaj7|
+F#m7b5|B7|Em7||
+F#m7b5|B7b9|Em7||
+Am7|D7|Gmaj7||
+F#m7b5|B7b9|Em7 Eb7|Dm7 Db7|
+Cmaj7|B7b9|Em7||
+
+G大调
+
+前面两边2514736，和fly me to the moon差不多，五度模进，3度附属，可以用和声小调
+
+736
+251
+736连续tritone
+436
+
