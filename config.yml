@@ -2,6 +2,9 @@ baseURL: 'https://ppphp.github.io/'
 languageCode: 'zh-cn'
 title: "a usr/bin"
 
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 hasCJKLanguage: true
 
 DisqusShortname: 'ppphp-1'
