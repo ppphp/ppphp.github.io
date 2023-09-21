@@ -11,6 +11,16 @@ DisqusShortname: 'ppphp-1'
 
 params:
   comments: true
+  
+  DateFormat: "2006-1-2"
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
 
 module:
   imports:
