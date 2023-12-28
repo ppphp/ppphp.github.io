@@ -1,4 +1,5 @@
 #+TITLE: blender点线面菜单
+#+DATE: 2022-04-29
 #+TAGS[]: graphics
 
 介绍最基本的blender操作

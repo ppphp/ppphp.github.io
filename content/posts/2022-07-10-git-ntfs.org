@@ -1,4 +1,5 @@
 #+TITLE: git ntfs error
+#+DATE: 2022-07-10
 #+TAGS[]: thoughts
 
 有的时候会报错不能readonly，需要修复一下磁盘，我是报错windows休眠中，所以运行 ~sudo ntfs-3g -o remove_hiberfile /dev/sdb1 /win~

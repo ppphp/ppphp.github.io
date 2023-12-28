@@ -1,4 +1,5 @@
 #+TITLE: physx overview
+#+DATE: 2022-04-12
 #+TAGS[]: physical engine
 
 physx非常搞笑，一会开源一会闭源的，[[https://github.com/NVIDIAGameWorks/PhysX][github]]上最新的是他的4.1版本。

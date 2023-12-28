@@ -1,4 +1,5 @@
 #+TITLE: go 1.18
+#+DATE: 2022-04-.4
 #+TAGS[]: go
 
 go 1.18带入了一个非常重要的特性，type parameter类型参数，所以特地学习一下这个版本。

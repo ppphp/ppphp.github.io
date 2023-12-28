@@ -1,4 +1,5 @@
 #+TITLE: blender建模功能
+#+DATE: 2022-04-22
 #+TAGS[]: graphics
 
 介绍最基本的blender操作

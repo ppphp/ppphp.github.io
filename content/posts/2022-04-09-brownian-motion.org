@@ -1,7 +1,0 @@
-#+TITLE: 布朗运动
-#+DATE: 2022-04-09
-#+TAGS[]: finance mathematics
-
-感觉越来越数学了。
-
-布朗运动是随机过程里最基本的功能

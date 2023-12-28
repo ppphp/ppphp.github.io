@@ -1,10 +1,35 @@
 #+TITLE: Hugo Update
-#+LAYOUT: post
-#+DATE: 2023-09-22
+#+DATE: 2023-09-21
 #+TAGS[]: hugo
-* hugo安装
 
-2023年重新开始写，这次没有变态的硬性自我规定了
+重新开始写博客，这次没有变态的硬性自我规定了。先重新装修一下hugo
+
+hugo版本采用了hugo 0.119
+
+* 主题安装切换hugo mod
+
+hugo mod是一个go mod的无情调用，用go mod管理资源。
+
+和golang一样，需要配置proxy，可以配置环境变量 ~HUGO_MODULE_PROXY~
+
+#+BEGIN_SRC bash
+  export HUGO_MODULE_PROXY=https://goproxy.cn/,direct
+#+END_SRC
+
+或者是文件hugo.yaml
+
+#+BEGIN_SRC yaml
+module:
+  proxy: https://goproxy.cn
+#+END_SRC
+
+然后把配置也放到hugo.yaml中
+
+#+BEGIN_SRC bash
+  hugo mod get -u
+#+END_SRC
+
+
 
 
 

@@ -1,4 +1,5 @@
 #+TITLE: bullet3 overview
+#+DATE: 2022-03-30
 #+TAGS[]: physical engine
 
 bullet3最近有一个小更新，不妨从此了解以下bullet3作为一个物理引擎是做什么的。

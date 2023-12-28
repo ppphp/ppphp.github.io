@@ -1,4 +1,5 @@
 #+TITLE: jack overivew
+#+DATE: 2022-04-14
 #+TAGS[]: audio
 
 jack2是一个音频的库，jack的英文本意是插头，挺形象的。

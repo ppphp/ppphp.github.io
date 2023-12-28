@@ -1,4 +1,5 @@
 #+TITLE: blender基本使用
+#+DATE: 2022-04-15
 #+TAGS[]: graphics
 
 介绍最基本的blender使用

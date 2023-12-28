@@ -1,4 +1,0 @@
-#+TITLE: krita overivew
-#+TAGS[]: paint
-
-krita是一个sai的替代品，主要用于2d绘画。

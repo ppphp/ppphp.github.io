@@ -1,4 +1,5 @@
 #+TITLE: hugo disqus安装
+#+DATE: 2022-04-20
 #+TAGS[]: blog
 
 disqus是一个第三方的评论提供商。主要提供了静态网页的接口，当然也可以只是ajax。
